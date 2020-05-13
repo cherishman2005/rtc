@@ -14,13 +14,31 @@
 
 # webrtc
 
-RTC（Real-time Communications）
+WebRTC由三大块组成：
 
-一对一视频通话
+![WebRTC的组成](/img/webrtc.png)
 
-一对多视频通话
+	（1）getUserMedia是负责获取用户本地的多媒体数据，如调起摄像头录像等。
+	（2）RTCPeerConnection是负责建立P2P连接以及传输多媒体数据。
+	（3）RTCDataChannel是提供的一个信令通道。
 
 
-# websocket
+## Mesh (P2P)
 
+WebRTC P2P模式下的网络拓扑结构
+
+![P2P](/img/webrtc-p2p.png)
+
+![Mesh](/img/webrtc-mesh.png)
+
+
+## SFU
+
+SFU全称：Selective Forwarding Unit。
+
+![SFU](/img/webrtc-sfu.png)
+
+## MCU
+
+![MCU](/img/webrtc-mcu.png)
 
