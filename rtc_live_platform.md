@@ -1,4 +1,4 @@
-# kurento-rtmp连麦直播系统架构
+# kurento-rtmp连麦互动直播系统架构
 
 ![kurento连麦直播系统](/img/kurento-rtmp.png)
 
