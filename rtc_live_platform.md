@@ -35,4 +35,3 @@ RTC： web端一般采用webrtc，移动端采用native
 
 # Author
 zhangbiwu
-The MIT License (MIT).
