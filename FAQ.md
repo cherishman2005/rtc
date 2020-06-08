@@ -1,6 +1,11 @@
 
 # FAQ
 
+## webrtc统计数据
+
+chrome://webrtc-internals/
+
+
 ## volume 视频音量设置
 
 将视频音量设置为 20%：
