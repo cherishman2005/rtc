@@ -1,11 +1,6 @@
 
 # FAQ
 
-## webrtc统计数据
-
-chrome://webrtc-internals/
-
-
 ## volume 视频音量设置
 
 将视频音量设置为 20%：
@@ -24,3 +19,10 @@ h264编码推荐的分辨率和码率关系如下:
 | 640x480               |     768-1024kbps         |
 | 1280x720(720p)        |     2048-3072kbps        |
 | 1920x1080(1080p)      |     5120-8192kbps        |
+
+
+## webrtc统计数据
+
+chrome://webrtc-internals/
+
+![webrtc分辨率和帧率](/img/wbrtc_frames.png)
