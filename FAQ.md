@@ -26,3 +26,5 @@ h264编码推荐的分辨率和码率关系如下:
 chrome://webrtc-internals/
 
 ![webrtc分辨率和帧率](/img/wbrtc_frames.png)
+
+分辨率：640*480 帧率：25
