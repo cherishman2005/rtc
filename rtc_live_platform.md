@@ -30,7 +30,7 @@ RTC： web端一般采用webrtc，移动端采用native
 | http-flv  | http 流，格式：flv，连续流 | 1~3s                   | 80/443端口，灵活支持        |
 | HLS       | http，格式：TS 文件       | 5~20s(一切片情况)       |  时延较大                   |
 
-【注】一般不用支持dash格式的拉流格式
+【注】一般不用支持dash的拉流
 
 
 # Author
