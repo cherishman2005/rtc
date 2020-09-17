@@ -3,7 +3,9 @@
 * 通过http握手，然后upgrade升级为websocket长连接；
 
 * 一般通过nginx ssl代理，将ws升级为wss；
+
   ** 架构简单时，采用nginx upstream；
+
   ** 如果系统容量大时，可将后端服注册到微服务中心，nginx去拉取ip+port列表。非常灵活方便。
 
 ## websocket协议字段
@@ -33,7 +35,9 @@
 
 * 应用协议采用FIN字段进行分片；—— 开发后端时，重点注意对这个字段的处理；
 
-# websocket开发场景
+## websocket开发场景
+
+* IM/chatroom即时通信系统；
 
 * websocket在webrtc做控制信令；
 
