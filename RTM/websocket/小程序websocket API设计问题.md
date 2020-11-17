@@ -2,7 +2,7 @@
 
 ## 微信小程序websocket为啥不支持onMessage直接赋值？
 
-不支持赋值监听：（web支持）
+小程序websocket API不支持赋值监听：（web支持）
 ```
 this.socketTask.onOpen = this.onopen.bind(this);
 this.socketTask.onError = this.onerror.bind(this);
@@ -10,7 +10,7 @@ this.socketTask.onClose = this.onclose.bind(this);
 this.socketTask.onMessage = this.onmessage.bind(this);
 ```
 
-小程序websocket需要注册回调函数来监听：
+小程序websocket API需要注册回调函数来监听：
 ```
 this.socketTask.onOpen(() => this.onopen());
 this.socketTask.onError(res => this.onerror(res));
