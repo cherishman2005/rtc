@@ -41,3 +41,18 @@ SFU全称：Selective Forwarding Unit。
 
 ![MCU](/img/webrtc-mcu.png)
 
+
+# Author
+
+zhangbiwu
+
+- [阿武的博客](https://cherishman2005.github.io/)
+
+主要技术栈：
+
+* 后端研发
+  * nginx/openresty
+  * C/C++
+  * nodejs
+  * js-sdk
+  * RTM/RTC
