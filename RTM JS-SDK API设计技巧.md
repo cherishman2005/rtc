@@ -53,6 +53,18 @@ join加上mutex锁，做到串行化操作。
 
 leave离开
 
+### pullMsg
+
+pullMsg拉取消息
+
+login是最重要的API。在底层链接未建立之前，需要做好缓存login请求；待建链后再发送。
+
+![pullMsg](/img/pullMsg.png)
+
+pullMsg rpc是一个异步过程(init, pending, finish 3个阶段)：
+
+* 在pullMsg执行pending期间，不应该被中断：不允许触发pullMsg，也不处理push通知。
+
 ## 小结
 
 *  同一实例的 login/logout join/leave sdk成做好串行化操作。
