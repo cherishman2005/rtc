@@ -53,11 +53,13 @@ join加上mutex锁，做到串行化操作。
 
 leave离开
 
+### refreshToken
+
+刷新token与login登录类似，也要做串行化mutex加锁处理。
+
 ### pullMsg
 
 pullMsg拉取消息
-
-login是最重要的API。在底层链接未建立之前，需要做好缓存login请求；待建链后再发送。
 
 ![pullMsg](/img/pullMsg.png)
 
