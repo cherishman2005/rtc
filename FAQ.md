@@ -50,6 +50,10 @@ $ od -tx1 -tc -Ax binFile
 -tc选项表示将文件中的ASCII码以字符形式列出来（和hexdump类似，输出结果最左边的一列是文件中的地址，默认以八进制显示）
 -Ax选项要求以十六进制显示文件中的地址
 
+## google performance
+
+- [google performance](https://medium.com/@marielgrace/how-to-analyze-runtime-performance-google-devtools-99fda64c09cb)
+
 # 学习链接
 
 - [淘宝直播技术干货：高清、低延时的实时视频直播技术解密](http://www.52im.net/thread-3220-1-1.html)

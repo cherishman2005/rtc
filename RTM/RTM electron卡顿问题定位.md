@@ -24,7 +24,7 @@ hummer-channel js-sdk 根据项目要求 已经1年不再更新维护；
 
 排查卡顿问题，把hummer-rts js-sdk的迭代优化的更新  合入到hummer-channel。 —— 仅此而已。
 
-RTS是经过比较严格的测试，也在 中信银行等客户商用。
+RTS是经过比较严格的测试，也在 中信银行等toB客户商用。
 
 
 ### 深层次分析
