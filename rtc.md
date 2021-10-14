@@ -53,6 +53,4 @@ zhangbiwu
 * 后端研发
   * nginx/openresty
   * C/C++
-  * nodejs
-  * js-sdk
   * RTM/RTC
