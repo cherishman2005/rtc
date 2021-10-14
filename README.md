@@ -3,7 +3,7 @@
 
 ## rtc技术介绍
 
-- [rtc](rtc.md)
+- [rtc技术介绍](rtc.md)
 
 ## obs推流
 
