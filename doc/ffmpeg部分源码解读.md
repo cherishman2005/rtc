@@ -31,3 +31,11 @@ AVHWAccel ff_mjpeg_nvdec_hwaccel = {
     .priv_data_size       = sizeof(NVDECContext),
 };
 ```
+
+nvidia不支持mjpeg硬件编解码：
+
+![image](https://user-images.githubusercontent.com/17688273/139840920-ef18ec1f-4fa3-458c-8696-1dab9b9d6e90.png)
+
+# 参考链接
+
+- [FFmpeg中的硬件加速编码器](https://meta.appinn.net/t/topic/18299)
