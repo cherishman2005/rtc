@@ -1,5 +1,26 @@
 # ffmpeg部分源码解读
 
+## av_init_packet
+```
+void av_init_packet(AVPacket *pkt)
+{
+    pkt->pts                  = AV_NOPTS_VALUE;
+    pkt->dts                  = AV_NOPTS_VALUE;
+    pkt->pos                  = -1;
+    pkt->duration             = 0;
+#if FF_API_CONVERGENCE_DURATION
+FF_DISABLE_DEPRECATION_WARNINGS
+    pkt->convergence_duration = 0;
+FF_ENABLE_DEPRECATION_WARNINGS
+#endif
+    pkt->flags                = 0;
+    pkt->stream_index         = 0;
+    pkt->buf                  = NULL;
+    pkt->side_data            = NULL;
+    pkt->side_data_elems      = 0;
+}
+```
+
 ## av_new_packet
 
 ```
