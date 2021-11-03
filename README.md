@@ -7,10 +7,10 @@
 
 ## ffmpeg
 
+基于ffmepg-sdk开发音视频编码/解码相关后端程序，重点就是要多读ffmpeg源码（前提是C/C++编程基础）。
+
 - [FFmpeg开发入门介绍](https://github.com/cherishman2005/rtc/wiki/FFmpeg%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D)
 - [ffmpeg部分源码解读](doc/ffmpeg部分源码解读.md)
-
-基于ffmepg-sdk开发音视频编码/解码相关后端程序，重点就是要多读ffmpeg源码。
 
 ## obs推流
 
