@@ -33,6 +33,26 @@ void av_frame_free(AVFrame **frame)
 }
 ```
 
+## swscale
+
+图像拉伸
+FFmpeg支持多种像素拉伸的方式。这些方式的定义位于libswscale\swscale.h中，如下所示。
+```
+#define SWS_FAST_BILINEAR     1
+#define SWS_BILINEAR          2
+#define SWS_BICUBIC           4
+#define SWS_X                 8
+#define SWS_POINT          0x10
+#define SWS_AREA           0x20
+#define SWS_BICUBLIN       0x40
+#define SWS_GAUSS          0x80
+#define SWS_SINC          0x100
+#define SWS_LANCZOS       0x200
+#define SWS_SPLINE        0x400
+```
+其中SWS_BICUBIC性能比较好；SWS_FAST_BILINEAR在性能和速度之间有一个比好好的平衡，
+而SWS_POINT的效果比较差。
+
 ## cuda
 
 ```
