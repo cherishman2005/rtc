@@ -58,3 +58,4 @@ nvidia不支持mjpeg硬件编解码：
 # 参考链接
 
 - [FFmpeg中的硬件加速编码器](https://meta.appinn.net/t/topic/18299)
+- [c++ - 使用C ++中的ffmpeg hwaccel](https://mlog.club/article/178278)
