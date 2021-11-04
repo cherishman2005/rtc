@@ -40,6 +40,39 @@ int av_new_packet(AVPacket *pkt, int size)
 }
 ```
 
+## av_free_packet
+
+```
+#if FF_API_AVPACKET_OLD_API
+FF_DISABLE_DEPRECATION_WARNINGS
+void av_free_packet(AVPacket *pkt)
+{
+    if (pkt) {
+        if (pkt->buf)
+            av_buffer_unref(&pkt->buf);
+        pkt->data            = NULL;
+        pkt->size            = 0;
+
+        av_packet_free_side_data(pkt);
+    }
+}
+FF_ENABLE_DEPRECATION_WARNINGS
+#endif
+```
+
+## av_packet_free
+
+```
+void av_packet_free(AVPacket **pkt)
+{
+    if (!pkt || !*pkt)
+        return;
+
+    av_packet_unref(*pkt);
+    av_freep(pkt);
+}
+```
+
 ## av_frame_free
 
 av_frame_free做了入参为空（nullptr）的异常保护：
