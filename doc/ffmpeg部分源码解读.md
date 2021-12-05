@@ -1,6 +1,8 @@
 # ffmpeg部分源码解读
 
-## av_init_packet
+## 最常用基础api
+
+### av_init_packet
 ```
 void av_init_packet(AVPacket *pkt)
 {
@@ -21,7 +23,7 @@ FF_ENABLE_DEPRECATION_WARNINGS
 }
 ```
 
-## av_new_packet
+### av_new_packet
 
 ```
 int av_new_packet(AVPacket *pkt, int size)
@@ -40,7 +42,7 @@ int av_new_packet(AVPacket *pkt, int size)
 }
 ```
 
-## av_free_packet
+### av_free_packet
 
 ```
 #if FF_API_AVPACKET_OLD_API
@@ -60,7 +62,7 @@ FF_ENABLE_DEPRECATION_WARNINGS
 #endif
 ```
 
-## av_packet_free
+### av_packet_free
 
 ```
 void av_packet_free(AVPacket **pkt)
@@ -73,7 +75,7 @@ void av_packet_free(AVPacket **pkt)
 }
 ```
 
-## av_frame_free
+### av_frame_free
 
 av_frame_free做了入参为空（nullptr）的异常保护：
 ```
@@ -87,7 +89,7 @@ void av_frame_free(AVFrame **frame)
 }
 ```
 
-## avcodec_free_context
+### avcodec_free_context
 
 释放编码器/解码器上下文
 ```
@@ -109,6 +111,38 @@ void avcodec_free_context(AVCodecContext **pavctx)
     av_freep(pavctx);
 }
 ```
+
+## 视频解码
+
+```
+// This does not quite work like avcodec_decode_audio4/avcodec_decode_video2.
+// There is the following difference: if you got a frame, you must call
+// it again with pkt=NULL. pkt==NULL is treated differently from pkt->size==0
+// (pkt==NULL means get more output, pkt->size==0 is a flush/drain packet)
+static int decode(AVCodecContext *avctx, AVFrame *frame, int *got_frame, AVPacket *pkt)
+{
+    int ret;
+
+    *got_frame = 0;
+
+    if (pkt) {
+        ret = avcodec_send_packet(avctx, pkt);
+        // In particular, we don't expect AVERROR(EAGAIN), because we read all
+        // decoded frames with avcodec_receive_frame() until done.
+        if (ret < 0 && ret != AVERROR_EOF)
+            return ret;
+    }
+
+    ret = avcodec_receive_frame(avctx, frame);
+    if (ret < 0 && ret != AVERROR(EAGAIN))
+        return ret;
+    if (ret >= 0)
+        *got_frame = 1;
+
+    return 0;
+}
+```
+
 
 ## swscale
 
