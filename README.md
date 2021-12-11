@@ -13,6 +13,13 @@
 - [FFmpeg开发入门介绍](https://github.com/cherishman2005/rtc/wiki/FFmpeg%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D)
 - [ffmpeg部分源码解读](doc/ffmpeg部分源码解读.md)
 
+### gpu硬件解码
+
+显卡解码
+
+对于解码来讲相对简单一些，解码性能最主要看两个指标就可以了，一个是单解码器解码的帧数，一个是解码芯片数。
+
+
 ## obs推流
 
 - [obs推流](https://github.com/cherishman2005/rtc/wiki/obs%E6%8E%A8%E6%B5%81)
