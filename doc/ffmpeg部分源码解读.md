@@ -112,6 +112,18 @@ void avcodec_free_context(AVCodecContext **pavctx)
 }
 ```
 
+### 分配内存并初始化为0
+
+```
+void *av_mallocz(size_t size)
+{
+    void *ptr = av_malloc(size);
+    if (ptr)
+        memset(ptr, 0, size);
+    return ptr;
+}
+```
+
 ## 视频解码
 
 ```
