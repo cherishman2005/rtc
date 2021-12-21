@@ -124,6 +124,28 @@ void *av_mallocz(size_t size)
 }
 ```
 
+### 释放内存
+
+```
+void av_free(void *ptr)
+{
+#if HAVE_ALIGNED_MALLOC
+    _aligned_free(ptr);
+#else
+    free(ptr);
+#endif
+}
+
+void av_freep(void *arg)
+{
+    void *val;
+
+    memcpy(&val, arg, sizeof(val));
+    memcpy(arg, &(void *){ NULL }, sizeof(val));
+    av_free(val);
+}
+```
+
 ## 视频解码
 
 ```
