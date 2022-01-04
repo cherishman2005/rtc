@@ -1,0 +1,42 @@
+{
+  "name": "ffmpeg-server",
+  "version": "2.0.0",
+  "description": "ffmpeg-server",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/rtm_server.js",
+    "redis-debug": "tsc redis_test.ts --target es6 && node redis_test.js"
+  },
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.2",
+    "ws": "^7.2.1",
+    "nodejs-websocket": "^1.7.2",
+    "express": "^4.14.0",
+    "koa": "^2.13.0",
+    "koa-router": "^10.0.0",
+    "koa-bodyparser": "^4.3.0",
+    "body-parser": "^1.19.0",
+    "mysql": "^2.18.1",
+    "axios": "^0.19.0",
+    "long": "^4.0.0",
+    "redis": "^2.8.0",
+    "log4js": "^6.1.0",
+    "path": "^0.12.7",
+    "ejs": "^3.1.5",
+    "consul": "^0.37.0",
+    "protobufjs": "^6.8.8",
+    "qs": "^6.9.1",
+    "js-md5": "^0.7.3",
+    "@types/js-md5": "^0.4.2",
+    "js-base64": "^2.5.1",
+    "@types/js-base64": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.5",
+    "typescript": "^3.6.3",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3"
+  }
+}
