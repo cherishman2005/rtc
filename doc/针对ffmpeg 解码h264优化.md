@@ -11,9 +11,11 @@ ffmpeg解码花屏，拖影，等等问题相信大家都遇见过，对于一�
 此法只对对视频质量要求比较强的项目，对帧率要求不太高，卡顿要求也不太的项目。
 
 优化点1:
+
 ![image](https://user-images.githubusercontent.com/17688273/148004695-fea46768-8ba6-4ff1-a2fb-cf5aaf7426ce.png)
 
 优化点2：
+
 ![image](https://user-images.githubusercontent.com/17688273/148004709-d87f6e51-d6e6-4ed3-b202-0dc59c001190.png)
 
 
@@ -22,7 +24,9 @@ ffmpeg解码花屏，拖影，等等问题相信大家都遇见过，对于一�
 对应的ffplay的修改：
 
 1、
+
 ![image](https://user-images.githubusercontent.com/17688273/148004732-1779989d-cd5c-4e9b-b144-bae6a69d27be.png)
 
 2、
+
 ![image](https://user-images.githubusercontent.com/17688273/148004749-f5009eee-7257-4769-ab22-66e7b6ff45fe.png)
