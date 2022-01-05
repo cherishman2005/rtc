@@ -72,3 +72,7 @@ command
 播放示例：
 
 ![image](https://user-images.githubusercontent.com/17688273/148151872-db6b0adc-081e-4fb3-a93d-438c8e0cf21e.png)
+
+# 参考链接
+
+- [https://www.psvmc.cn/article/2019-08-25-fluent-ffmpeg-rtmp.html](https://www.psvmc.cn/article/2019-08-25-fluent-ffmpeg-rtmp.html)
