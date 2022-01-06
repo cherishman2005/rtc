@@ -76,3 +76,5 @@ command
 # 参考链接
 
 - [https://www.psvmc.cn/article/2019-08-25-fluent-ffmpeg-rtmp.html](https://www.psvmc.cn/article/2019-08-25-fluent-ffmpeg-rtmp.html)
+
+- [https://luneshao.github.io/2020/2020-04-07-fluent-ffmpeg-api/](https://luneshao.github.io/2020/2020-04-07-fluent-ffmpeg-api/)
