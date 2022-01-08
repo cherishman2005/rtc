@@ -12,3 +12,7 @@ root      1524  1498 99 15:21 pts/1    00:06:45 /usr/bin/ffmpeg -i /data12/nodej
 
 ffmpeg软件转码太耗cpu
 ![image](https://user-images.githubusercontent.com/17688273/148635803-b4a17637-7445-4469-92b2-88d1bb600948.png)
+
+# 参考链接
+
+- [https://blog.csdn.net/xiaoluer/article/details/81346285](https://blog.csdn.net/xiaoluer/article/details/81346285)
