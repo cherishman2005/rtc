@@ -2,6 +2,11 @@
 
 ## ffmpeg性能压测
 
+## 多个输入连接到单个输出文件
+
+```
+/usr/bin/ffmpeg -i vtest.mp4 -i vtest.mp4 -y -filter_complex concat=n=2:v=1:a=0 out.mp4
+```
 
 ## ffmpeg多路转码
 ```
