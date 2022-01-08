@@ -15,4 +15,4 @@ ffmpeg软件转码太耗cpu
 
 # 参考链接
 
-- [https://blog.csdn.net/xiaoluer/article/details/81346285](https://blog.csdn.net/xiaoluer/article/details/81346285)
+- [使用ffmpeg命令行实现一入多出转码](https://blog.csdn.net/xiaoluer/article/details/81346285)
