@@ -1,0 +1,44 @@
+ret = CHECK_CU(cu->cuCtxCreate(&hwctx->cuda_ctx, desired_flags,
+                               hwctx->internal->cuda_device));
+
+
+#define CHECK_CU(x) FF_CUDA_CHECK_DL(device_ctx, cu, x)
+
+
+#define FF_CUDA_CHECK_DL(avclass, cudl, x) ff_cuda_check(avclass, cudl->cuGetErrorName, cudl->cuGetErrorString, (x), #x)
+
+
+
+/**
+ * Wrap a CUDA function call and print error information if it fails.
+ */
+static inline int ff_cuda_check(void *avctx,
+                                void *cuGetErrorName_fn, void *cuGetErrorString_fn,
+                                CUresult err, const char *func)
+{
+    const char *err_name;
+    const char *err_string;
+
+    av_log(avctx, AV_LOG_TRACE, "Calling %s\n", func);
+
+    if (err == CUDA_SUCCESS)
+        return 0;
+
+    ((cuda_check_GetErrorName *)cuGetErrorName_fn)(err, &err_name);
+    ((cuda_check_GetErrorString *)cuGetErrorString_fn)(err, &err_string);
+
+    av_log(avctx, AV_LOG_ERROR, "%s failed", func);
+    if (err_name && err_string)
+        av_log(avctx, AV_LOG_ERROR, " -> %s: %s", err_name, err_string);
+    av_log(avctx, AV_LOG_ERROR, "\n");
+
+    return AVERROR_EXTERNAL;
+}
+
+
+#define AVERROR_EXTERNAL           FFERRTAG( 'E','X','T',' ') ///< Generic error in an external library
+
+
+
+[AVHWDeviceContext @ 0x7ffe3801c6c0] cu->cuCtxCreate(&hwctx->cuda_ctx, desired_flags, hwctx->internal->cuda_device) failed -> CUDA_ERROR_OUT_OF_MEMORY: out of memory
+[hevc_cuvid @ 0x7ffe3800b500] ctx->hwdevice is null
