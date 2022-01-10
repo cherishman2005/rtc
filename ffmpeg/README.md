@@ -41,4 +41,3 @@ ffmpeg软件转码太耗cpu
 - [https://github.com/pogofdev/faceRecognitionDemo](https://github.com/pogofdev/faceRecognitionDemo)
 
 - [https://github.com/DominicCabral/face-recognition](https://github.com/DominicCabral/face-recognition)
-- 
