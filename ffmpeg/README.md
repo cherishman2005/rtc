@@ -39,3 +39,6 @@ ffmpeg软件转码太耗cpu
 
 - [ffmpeg中的roi encoding介绍](https://blog.csdn.net/yjguo2004/article/details/104460763)
 - [https://github.com/pogofdev/faceRecognitionDemo](https://github.com/pogofdev/faceRecognitionDemo)
+
+- [https://github.com/DominicCabral/face-recognition](https://github.com/DominicCabral/face-recognition)
+- 
