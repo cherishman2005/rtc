@@ -23,3 +23,5 @@ ffmpeg软件转码太耗cpu
 - [使用ffmpeg命令行实现一入多出转码](https://blog.csdn.net/xiaoluer/article/details/81346285)
 
 - [opencv opencv4nodejs 安装和简单抠图](https://www.codenong.com/cs122064921/)
+
+- [ffmpeg中的roi encoding介绍](https://blog.csdn.net/yjguo2004/article/details/104460763)
