@@ -20,6 +20,10 @@ ffmpeg软件转码太耗cpu
 
 ## opencv+ai人脸检测
 
+* opencv预处理
+* AI-model process
+* opencv后处理
+
 ![image](https://user-images.githubusercontent.com/17688273/148714857-163e7e23-bb23-4566-a1df-a4685d84c46f.png)
 
 # 参考链接
