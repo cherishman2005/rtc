@@ -38,3 +38,4 @@ ffmpeg软件转码太耗cpu
 - [opencv opencv4nodejs 安装和简单抠图](https://www.codenong.com/cs122064921/)
 
 - [ffmpeg中的roi encoding介绍](https://blog.csdn.net/yjguo2004/article/details/104460763)
+- [https://github.com/pogofdev/faceRecognitionDemo](https://github.com/pogofdev/faceRecognitionDemo)
