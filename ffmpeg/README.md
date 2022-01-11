@@ -22,7 +22,7 @@ ffmpeg软件转码太耗cpu
 
 * opencv预处理
 * AI-model process
-* opencv后处理
+* post后处理
 
 ![image](https://user-images.githubusercontent.com/17688273/148714857-163e7e23-bb23-4566-a1df-a4685d84c46f.png)
 
