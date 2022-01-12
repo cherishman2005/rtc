@@ -60,3 +60,5 @@ ffmpeg软件转码太耗cpu
 
 - [OpenCV实战：人脸关键点检测（FaceMark）](http://www.yaowenming.com/A/QV5ZXVDyzy/)
 
+- [基于主观感兴趣区域的视频编码实践](https://cloud.tencent.com/developer/article/1676158)
+
