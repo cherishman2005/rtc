@@ -33,6 +33,9 @@ ffmpeg软件转码太耗cpu
 
 ### Facemark：使用OpenCV进行面部特征点检测
 
+### 音视频特效
+
+（1）ROI感知编码； 人脸检测； --> 特效 加facemark
 
 # 参考链接
 
