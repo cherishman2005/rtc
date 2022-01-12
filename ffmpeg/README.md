@@ -48,3 +48,6 @@ ffmpeg软件转码太耗cpu
 - [https://www.geeksforgeeks.org/how-to-use-opencv-with-node-js/](https://www.geeksforgeeks.org/how-to-use-opencv-with-node-js/)
 
 - [c++ - 使用OpenCV将YUV转换为有损压缩](https://www.coder.work/article/3325452)
+
+- [OpenCV实战：人脸关键点检测（FaceMark）](http://www.yaowenming.com/A/QV5ZXVDyzy/)
+
