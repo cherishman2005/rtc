@@ -12,7 +12,7 @@
 
 <img width="320" alt="39c2b0df59412535e08089e3aaf0713" src="https://user-images.githubusercontent.com/17688273/149617590-8be78d41-c54c-4f7e-8060-639f8af6f76a.png">
 
-** 挂机的人脸检测算法是不是很成熟？**
+**挂机的人脸检测算法是不是很成熟？**
 
 我用开源的，尝试检测动画片图片，检测不到人脸。
 
