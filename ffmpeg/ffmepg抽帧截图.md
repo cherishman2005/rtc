@@ -5,6 +5,11 @@
 ffmpeg  -ss 00:01:00 -i /data/services/nodejs/video/test.mp4 -f image2  -vf fps=fps=1/60 -qscale:v 2 /data/services/nodejs/video/test/test-%05d.jpeg
 ```
 
+（2）-t 代表持续时间，单位为秒：
+```
+ffmpeg  -ss 00:01:00 -i /data/services/nodejs/video/test.mp4 -f image2  -t 10 -qscale:v 2 /data/services/nodejs/video/test/test-%05d.jpeg
+```
+
 
 # FAQ
 
