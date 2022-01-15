@@ -18,3 +18,5 @@ ffmpeg  -ss 00:01:00 -i /data/services/nodejs/video/test.mp4 -f image2  -t 10 -q
 # 参考链接
 
 - [https://longrm.com/2019/12/19/2019-11-27-ffmpeg-screenshot/](https://longrm.com/2019/12/19/2019-11-27-ffmpeg-screenshot/)
+
+- [https://longrm.com/2019/12/23/2019-12-23-ffmpeg-screenshot-2/](https://longrm.com/2019/12/23/2019-12-23-ffmpeg-screenshot-2/)
