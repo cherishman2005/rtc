@@ -1,6 +1,5 @@
 
-# opencv4nodejs
-
+# opencv
 
 # FAQ
 
