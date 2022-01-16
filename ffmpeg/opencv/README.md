@@ -24,7 +24,7 @@
 
 **误判需要进行优化**
 
-- [人脸检测识别结果](./face_dection_output)
+- [人脸检测识别结果](./face_detection_output)
 
 识别结果中存在一些误判：
 
