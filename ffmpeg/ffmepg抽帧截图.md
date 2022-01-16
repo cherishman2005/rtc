@@ -16,10 +16,15 @@ ffmpeg -i /data/services/nodejs/video/test.mp4 -an -vf select='eq(pict_type\,I)'
 ```
 
 各参数解释:
+
 -i :输入文件，这里的话其实就是视频；
+
 -vf:是一个命令行，表示过滤图形的描述。选择过滤器select会选择帧进行输出：pict_type和对应的类型:PICT_TYPE_I 表示是I帧，即关键帧；
+
 -vsync 2:阻止每个关键帧产生多余的拷贝；
+
 -f image2 name_%02d.jpeg:将视频帧写入到图片中，样式的格式一般是: “%d” 或者 “%0Nd”
+
 -s:分辨率，544*960
 
 这样保存下来的关键帧的命名顺序是从001开始的，数字表示第几个关键帧。
