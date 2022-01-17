@@ -42,6 +42,8 @@ ffmpeg -i /data/services/nodejs/video/test.mp4 -c copy -metadata:s:v:0 rotate=90
 
 ## ffmepg抽帧截图出现黑屏怎么解决？
 
+观看了test.mp4视频，视频本来就是采用黑屏切换，抽到I帧黑屏是正常情况。
+
 # 参考链接
 
 - [https://longrm.com/2019/12/19/2019-11-27-ffmpeg-screenshot/](https://longrm.com/2019/12/19/2019-11-27-ffmpeg-screenshot/)
