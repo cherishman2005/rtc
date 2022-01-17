@@ -42,3 +42,7 @@
 - [OpenCV实战：人脸关键点检测（FaceMark）](https://zhuanlan.zhihu.com/p/35390012)
 
 - [Node.js+OpenCV面部脸识别](https://cloud.tencent.com/developer/article/1051590)
+
+- [https://github.com/justadudewhohacks/opencv4nodejs](https://github.com/justadudewhohacks/opencv4nodejs)
+
+- [https://justadudewhohacks.github.io/opencv4nodejs/docs/VideoWriter/#VideoWriter](https://justadudewhohacks.github.io/opencv4nodejs/docs/VideoWriter/#VideoWriter)
