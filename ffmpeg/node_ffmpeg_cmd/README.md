@@ -106,6 +106,11 @@ user    0m0.004s
 sys     0m0.000s
 ```
 
+# FAQ
+
+## 怎样隐藏响应头 X-Powered-By: Express
+
+
 # 参考链接
 
 - [https://www.psvmc.cn/article/2019-08-25-fluent-ffmpeg-rtmp.html](https://www.psvmc.cn/article/2019-08-25-fluent-ffmpeg-rtmp.html)
