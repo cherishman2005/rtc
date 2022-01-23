@@ -110,6 +110,10 @@ sys     0m0.000s
 
 ## 怎样隐藏响应头 X-Powered-By: Express
 
+**nodejs-express设置**
+```
+app.set('x-powered-by', false);
+```
 
 # 参考链接
 
