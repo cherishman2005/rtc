@@ -73,6 +73,23 @@ command
 
 ![image](https://user-images.githubusercontent.com/17688273/148151872-db6b0adc-081e-4fb3-a93d-438c8e0cf21e.png)
 
+## 请求测试
+
+```
+curl  http://localhost:4000/images/snapshot-01.png -o snapshot-01.png
+```
+
+运行结果：
+```
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  169k    0  169k    0     0  50797      0 --:--:--  0:00:03 --:--:-- 50799
+
+real    0m3.423s
+user    0m0.004s
+sys     0m0.000s
+```
+
 # 参考链接
 
 - [https://www.psvmc.cn/article/2019-08-25-fluent-ffmpeg-rtmp.html](https://www.psvmc.cn/article/2019-08-25-fluent-ffmpeg-rtmp.html)
