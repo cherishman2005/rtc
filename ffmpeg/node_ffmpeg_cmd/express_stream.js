@@ -53,5 +53,6 @@ const snapshot = async function (req, res) {
 
 app.get('/video/:filename', videoStream);
 app.get('/images/:filename', snapshot);
+app.set('x-powered-by', false);
 
 app.listen(4000);
