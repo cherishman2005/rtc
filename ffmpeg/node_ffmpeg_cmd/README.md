@@ -76,16 +76,32 @@ command
 ## 请求测试
 
 ```
-curl  http://localhost:4000/images/snapshot-01.png -o snapshot-01.png
+time curl  http://localhost:4000/images/snapshot-01.png -o snapshot-01.png -v
 ```
 
 运行结果：
 ```
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100  169k    0  169k    0     0  50797      0 --:--:--  0:00:03 --:--:-- 50799
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 4000 (#0)
+> GET /images/snapshot-01.png HTTP/1.1
+> Host: localhost:4000
+> User-Agent: curl/7.47.0
+> Accept: */*
+> 
+  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0< HTTP/1.1 200 OK
+< X-Powered-By: Express
+< Content-Type: image/png
+< Date: Sun, 23 Jan 2022 13:43:44 GMT
+< Connection: keep-alive
+< Transfer-Encoding: chunked
+< 
+{ [16228 bytes data]
+100  169k    0  169k    0     0  50049      0 --:--:--  0:00:03 --:--:-- 50052
+* Connection #0 to host localhost left intact
 
-real    0m3.423s
+real    0m3.474s
 user    0m0.004s
 sys     0m0.000s
 ```
