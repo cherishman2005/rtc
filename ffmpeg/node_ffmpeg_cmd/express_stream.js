@@ -44,7 +44,7 @@ const snapshot = async function (req, res) {
             */
             console.log(err);
         })
-        .outputOptions(['-f image2', '-vframes 5', '-vcodec png', '-f rawvideo', '-s 320x240', '-ss 00:02:01'])
+        .outputOptions(['-f image2', '-vframes 1', '-vcodec png', '-f rawvideo', '-s 320x240', '-ss 00:02:01'])
         //.output(file)
         //.run();
         // save to stream
