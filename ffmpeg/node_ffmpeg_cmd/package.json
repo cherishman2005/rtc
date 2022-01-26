@@ -9,6 +9,7 @@
     "redis-debug": "tsc redis_test.ts --target es6 && node redis_test.js"
   },
   "dependencies": {
+    "@baiducloud/sdk": "^1.0.0-rc.34",
     "fluent-ffmpeg": "^2.1.2",
     "ws": "^7.2.1",
     "nodejs-websocket": "^1.7.2",
