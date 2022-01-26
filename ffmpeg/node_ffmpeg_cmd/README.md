@@ -121,6 +121,8 @@ app.set('x-powered-by', false);
 
 - [https://luneshao.github.io/2020/2020-04-07-fluent-ffmpeg-api/](https://luneshao.github.io/2020/2020-04-07-fluent-ffmpeg-api/)
 
+- [https://github.com/fluent-ffmpeg/node-fluent-ffmpeg/issues/1106](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg/issues/1106)
+
 - [https://github.com/glynnbird/ffmpegrunner](https://github.com/glynnbird/ffmpegrunner)
 
 - [抽帧截图](http://www.blogketori.com/wordpress/2019/08/25/nodejs%E5%AF%B9-fluent-ffmpeg%E7%BB%84%E4%BB%B6%E5%AF%B9%E8%A7%86%E9%A2%91%E8%BF%9B%E8%A1%8C%E5%88%86%E7%89%87%E5%92%8C%E5%8A%A0%E5%AF%86/)
