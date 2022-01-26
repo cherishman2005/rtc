@@ -140,9 +140,7 @@ const snapshot123 = async function (req, res) {
           // use outputBuffer
           console.log("outputBuffer:", outputBuffer)
           client.putObject(`dataset/zhangbiwu/${req.params.filename}.jpeg`, outputBuffer, {
-              headers: {
-                  "Content-Type": "image/jpeg"
-              }
+              "Content-Type": "image/jpeg"
           })
         });
 
