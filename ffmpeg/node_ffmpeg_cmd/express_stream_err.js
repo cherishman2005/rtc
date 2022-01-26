@@ -1,6 +1,5 @@
 const express = require('express');
 const fs = require('fs');
-const stream = require('stream');
 const client = require('./bce_client');
 const ffmpeg = require('fluent-ffmpeg');
 const ffmpegPath = '/usr/bin/ffmpeg';
@@ -103,14 +102,22 @@ const snapshot123 = async function (req, res) {
     }
 
     //res.contentType('image/png');
-    let bufferStream = new stream.PassThrough();
+    let tmp = `/tmp/${req.params.filename}.png`;
+    let stream = fs.createReadStream(tmp);
     let proc = ffmpeg(inputPath)
         .setFfmpegPath(ffmpegPath)
         .on('end', function(files)
         {
             //res.sendfile(file);
             console.log('end: typeof stream =', typeof stream);
-            
+            let bf = fs.readFileSync(tmp);
+            const buffer = Buffer.from(bf); 
+            console.log("bf:", bf);
+            console.log("stream:", stream);
+            console.log("stream.buffer:", stream.buffer);
+            console.log("stream size:", fs.statSync(tmp).size)
+
+            client.putObject(`dataset/zhangbiwu/${req.params.filename}.png`, stream)
             res.json({
                 code:200,
                 msg: "ok"
@@ -124,27 +131,11 @@ const snapshot123 = async function (req, res) {
             });
             console.log(err);
         })
-        .outputOptions(['-f image2', '-vframes 1', '-vcodec mjpeg', '-f rawvideo', '-s 320x240', '-ss 00:02:01'])
+        .outputOptions(['-f image2', '-vframes 1', '-vcodec png', '-f rawvideo', '-s 320x240', '-ss 00:02:01'])
         //.output(file)
         //.run();
         // save to stream
-        .writeToStream(bufferStream);
-
-        // Read the passthrough stream
-        const buffers = [];
-        bufferStream.on('data', function (buf) {
-          buffers.push(buf);
-        });
-        bufferStream.on('end', function () {
-          const outputBuffer = Buffer.concat(buffers);
-          // use outputBuffer
-          console.log("outputBuffer:", outputBuffer)
-          client.putObject(`dataset/zhangbiwu/${req.params.filename}.jpeg`, outputBuffer, {
-              headers: {
-                  "Content-Type": "image/jpeg"
-              }
-          })
-        });
+        .pipe(stream, {end:true});
 
 }
 
