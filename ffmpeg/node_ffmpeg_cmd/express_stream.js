@@ -1,10 +1,16 @@
 const express = require('express');
 const fs = require('fs');
 const stream = require('stream');
+const axios = require('axios');
 const client = require('./bce_client');
 const ffmpeg = require('fluent-ffmpeg');
 const ffmpegPath = '/usr/bin/ffmpeg';
 const app = express();
+
+
+axios.defaults.timeout = 6000 // 请求最大时间
+axios.defaults.headers.post['Content-Type'] = 'application/json;charset=UTF-8'
+const reqUrl = 'http://127.0.0.1:8080/genBosUrl';
 
 const videoStream = async function (req, res) {
   res.contentType('flv');
@@ -111,10 +117,12 @@ const snapshot123 = async function (req, res) {
             //res.sendfile(file);
             console.log('end: typeof stream =', typeof stream);
             
+            /*
             res.json({
                 code:200,
                 msg: "ok"
             });
+            */
         })
         .on('error', function(err)
         {
@@ -129,19 +137,52 @@ const snapshot123 = async function (req, res) {
         //.run();
         // save to stream
         .writeToStream(bufferStream);
+        
+        console.log("bufferStream:", bufferStream);
 
         // Read the passthrough stream
         const buffers = [];
         bufferStream.on('data', function (buf) {
           buffers.push(buf);
         });
-        bufferStream.on('end', function () {
+        bufferStream.on('end', async function () {
           const outputBuffer = Buffer.concat(buffers);
           // use outputBuffer
           console.log("outputBuffer:", outputBuffer)
-          client.putObject(`dataset/zhangbiwu/${req.params.filename}.jpeg`, outputBuffer, {
+          let objectName = `dataset/zhangbiwu/${req.params.filename}.jpeg`
+          client.putObject(objectName, outputBuffer, {
               "Content-Type": "image/jpeg"
           })
+          
+          /*
+          try {
+            const data = { object: objectName, expiration: -1};
+            const rsp = await axios.post(reqUrl, data);
+            console.log("genBosUrl: ", rsp.status, rsp.data);
+            if (rsp && rsp.status == 200) {
+                res.json({
+                    code: 200,
+                    msg: "ok",
+                    url: rsp.data.url,
+                })
+            } else {
+                res.json({
+                    code: 400,
+                    msg: "genBosUrl failed",
+                })
+            }
+          } catch (e) {
+            console.error('axios error:', e);
+          }
+          */
+          let url = client.generatePresignedUrl(objectName)
+          
+          res.json({
+            code: 200,
+            msg: "ok",
+            url: url,
+          })
+
         });
 
 }
