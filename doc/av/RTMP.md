@@ -44,3 +44,11 @@
 
 ![image](https://user-images.githubusercontent.com/17688273/151362836-bc326fb1-0114-48bc-b21c-d244c1e08e33.png)
 
+（10）[client -> server] setDataFrame()
+
+![image](https://user-images.githubusercontent.com/17688273/151363724-c4d15e6c-bca7-48f5-942f-979df1edb011.png)
+
+（11）[client -> server] Video Data; Audio Data
+
+![image](https://user-images.githubusercontent.com/17688273/151363964-912042b6-167b-4343-b6bb-feb63b92ecf7.png)
+
