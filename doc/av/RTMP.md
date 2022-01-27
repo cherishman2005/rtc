@@ -39,3 +39,8 @@
 （8）[client -> server] createStream()
 
 ![image](https://user-images.githubusercontent.com/17688273/151361676-024f6a4c-fae1-43b6-b9b7-96ef7f610862.png)
+
+（9）publish
+
+![image](https://user-images.githubusercontent.com/17688273/151362836-bc326fb1-0114-48bc-b21c-d244c1e08e33.png)
+
