@@ -74,6 +74,8 @@ ffmpeg -i /data/services/nodejs/video/test.mp4 -c copy -metadata:s:v:0 rotate=90
 
 方案3 比较合理
 
+* 抽帧截图服务  与 bos上传服务 完全独立； -- 服务隔离
+
 # FAQ
 
 ## ffmepg抽帧截图出现黑屏怎么解决？
