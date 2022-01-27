@@ -139,11 +139,7 @@ const snapshot123 = async function (req, res) {
             });
             console.log("bos response: ", rsp.status, rsp.data);
             if (rsp && rsp.status == 200) {
-                res.json({
-                    code: 200,
-                    msg: "ok",
-                    //url: rsp.data.url,
-                })
+                res.json(rsp.data)
             } else {
                 res.json({
                     code: 400,
