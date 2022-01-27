@@ -1,6 +1,12 @@
 
 # node-ffmpeg
 
+## snapshot
+
+start snapshot-server:
+```
+node express_stream.js
+```
 
 ## mp4-to-push-rtmp-stream
 
