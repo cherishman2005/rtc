@@ -21,3 +21,7 @@
 （4）Handshake C2 (client -> server)
 
 ![image](https://user-images.githubusercontent.com/17688273/151357896-8da6a4ef-d340-4050-8613-b3ee06fa7eb5.png)
+
+（5）connect('live') (client -> server)
+
+![image](https://user-images.githubusercontent.com/17688273/151359231-20b2f87a-cd5c-4986-ad9b-57c27ce5d1a5.png)
