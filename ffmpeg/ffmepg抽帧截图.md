@@ -38,6 +38,18 @@ ffmpeg -i /data/services/nodejs/video/test.mp4 -an -vf select='eq(pict_type\,I)'
 ffmpeg -i /data/services/nodejs/video/test.mp4 -c copy -metadata:s:v:0 rotate=90 /data/services/nodejs/video/output.mp4
 ```
 
+## 抽帧截图
+
+抽帧截图是电商、社交业务开发必备功能
+
+**主要功能点**
+
+* 对视频截图、或通过高清图像生成缩略图
+
+* 生成图像后上传的oss对象存储，并将存储的图像对象生成签名url供业务使用
+
+![image](https://user-images.githubusercontent.com/17688273/151287495-70b1ea25-3de1-49ec-99c0-8f61894074fb.png)
+
 # FAQ
 
 ## ffmepg抽帧截图出现黑屏怎么解决？
