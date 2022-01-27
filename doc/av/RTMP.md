@@ -35,3 +35,7 @@
 （7）[server -> client] Set Peer Bandwidth(5000000); NetConnection.Connect.Success;
 
 ![image](https://user-images.githubusercontent.com/17688273/151361033-413b148d-2258-4299-a698-2f66c259f16e.png)
+
+（8）[client -> server] createStream()
+
+![image](https://user-images.githubusercontent.com/17688273/151361676-024f6a4c-fae1-43b6-b9b7-96ef7f610862.png)
