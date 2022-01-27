@@ -17,3 +17,7 @@
 （3）Handshake S0+S1+S2 (server -> client)
 
 ![image](https://user-images.githubusercontent.com/17688273/151357271-78302be9-87f6-46c3-8065-23f252dc3501.png)
+
+（4）Handshake C2 (client -> server)
+
+![image](https://user-images.githubusercontent.com/17688273/151357896-8da6a4ef-d340-4050-8613-b3ee06fa7eb5.png)
