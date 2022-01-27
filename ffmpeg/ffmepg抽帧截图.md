@@ -48,13 +48,44 @@ ffmpeg -i /data/services/nodejs/video/test.mp4 -c copy -metadata:s:v:0 rotate=90
 
 * 生成图像后上传的oss对象存储，并将存储的图像对象生成签名url供业务使用
 
-![image](https://user-images.githubusercontent.com/17688273/151287495-70b1ea25-3de1-49ec-99c0-8f61894074fb.png)
+### 方案1
+
+![image](https://user-images.githubusercontent.com/17688273/151314792-a643271b-7524-4c22-9395-dd4d8657a243.png)
+
+
+方案1缺点： ffmpeg抽帧截图服务 和golang-server均要保存ak，sk；
+
+* ak，sk管理分散；-- 容易造成ak，sk泄漏
+
+* 服务划分不清晰，抽帧截图服务 和  bos对象存储服务耦合
+
+### 方案2
+
+![image](https://user-images.githubusercontent.com/17688273/151314817-b7ce5618-a3b5-438d-adf5-801dc143f354.png)
+
+
+
+* 抽帧截图服务 和  bos对象存储 统一在一个服务； -- 不方便优化升级。
+  -- 建议拆分成2个服务
+
+### 方案3
+
+![image](https://user-images.githubusercontent.com/17688273/151314850-ed9a20f6-51de-419f-b223-826f6ffb48ca.png)
+
+方案3 比较合理
 
 # FAQ
 
 ## ffmepg抽帧截图出现黑屏怎么解决？
 
 观看了test.mp4视频，视频本来就是采用黑屏切换，抽到I帧黑屏是正常情况。
+
+## ffmpeg抽帧截图的优化
+
+* 怎样从视频文件抽取到非模糊图片？
+
+* 怎样截到人脸图像，并且居中图像？ -- AI技术
+
 
 # 参考链接
 
