@@ -38,14 +38,15 @@ app.use(router.post("/uploadFile",(ctx,next)=>{
 http.createServer(app.callback()).listen(3000);
 */
 
-let writer = fs.createWriteStream('test_stream.txt') 
 
 let server = http.createServer(function(req, res) {
+  let writer = fs.createWriteStream('test_stream.jpg') 
+
   req.on('data', function(chunk) {
     writer.write(chunk);
   });
-  
   req.on('end', function() {
+    //writer.end();
     
     res.write("ok");
     res.end();
