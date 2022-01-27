@@ -2,7 +2,13 @@
 
 ## rtmp推流
 
+**tcp 3次握手**
+
+![image](https://user-images.githubusercontent.com/17688273/151367387-033e6e19-cc2c-422f-a708-0aeb1b54af8c.png)
+
+
 **RTMP握手**
+
 首先服务端与客户端需要通过3次交换报文完成握手,RTMP是由三个静态大小的块,而不是可变大小的块组成的,客户端与服务器发送相同的三个chunk,客户端发送c0,c1,c2,服务端发送s0,s1,s2。
 
 ![image](https://user-images.githubusercontent.com/17688273/151366769-4ffb1ea8-3411-47f0-9fbd-4ca2b897a2c1.png)
