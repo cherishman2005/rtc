@@ -132,7 +132,11 @@ const snapshot123 = async function (req, res) {
           let url = client.generatePresignedUrl(objectName)
           
           try {
-            const rsp = await axios.post('http://localhost:3000/uploadFile', outputBuffer);
+            const rsp = await axios.post('http://localhost:3000/upload/test_stream.jpg', outputBuffer, {
+                headers: {
+                    "Content-Type": "image/jpeg"
+                },
+            });
             console.log("bos response: ", rsp.status, rsp.data);
             if (rsp && rsp.status == 200) {
                 res.json({
