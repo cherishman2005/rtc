@@ -5,6 +5,7 @@
     - [push数据抓包分析](#push数据抓包分析)
   - [rtmp拉流player](#rtmp拉流player)
     - [pull数据抓包分析](#pull数据抓包分析)
+  - [RTMP传输过程](#rtmp传输过程)
 - [FAQ](#faq)
   - [RTMP直播推流中需要注意的点](#rtmp直播推流中需要注意的点)
 - [link](#link)
@@ -98,6 +99,8 @@
 
 ## rtmp拉流player
 
+![image](https://user-images.githubusercontent.com/17688273/151475286-0d2b7c90-66d7-489c-bc05-99c12c2d76e5.png)
+
 ### pull数据抓包分析
 
 （1） tcp 3次 握手
@@ -129,6 +132,11 @@
 ![image](https://user-images.githubusercontent.com/17688273/151474816-e83d5de2-fea8-4af8-ac49-3e3bb390f408.png)
 
 
+## RTMP传输过程
+
+![image](https://user-images.githubusercontent.com/17688273/151475516-fa490229-ccb1-4392-afd6-b7fff95fa0e2.png)
+
+
 # FAQ
 
 ## RTMP直播推流中需要注意的点
@@ -139,3 +147,4 @@
 # link
 
 - [https://seminelee.com/2021/05/07/video-2/](https://seminelee.com/2021/05/07/video-2/)
+- [https://www.toutiao.com/i6877833362535350798](https://www.toutiao.com/i6877833362535350798)
