@@ -1,10 +1,12 @@
 <!-- TOC -->
 
 - [RTMP](#rtmp)
-    - [rtmp推流](#rtmp推流)
-        - [push数据抓包分析](#push数据抓包分析)
+  - [rtmp推流](#rtmp推流)
+    - [push数据抓包分析](#push数据抓包分析)
+  - [rtmp拉流player](#rtmp拉流player)
+    - [pull数据抓包分析](#pull数据抓包分析)
 - [FAQ](#faq)
-    - [RTMP直播推流中需要注意的点](#rtmp直播推流中需要注意的点)
+  - [RTMP直播推流中需要注意的点](#rtmp直播推流中需要注意的点)
 - [link](#link)
 
 <!-- /TOC -->
@@ -95,6 +97,8 @@
 
 
 ## rtmp拉流player
+
+### pull数据抓包分析
 
 （1） tcp 3次 握手
 
