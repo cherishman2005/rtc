@@ -93,6 +93,38 @@
 
 ![image](https://user-images.githubusercontent.com/17688273/151363964-912042b6-167b-4343-b6bb-feb63b92ecf7.png)
 
+
+## rtmp拉流player
+
+（1） tcp 3次 握手
+
+（2）[client -> server] Handshake C0+C1 
+![image](https://user-images.githubusercontent.com/17688273/151473525-429dc786-52db-42ef-9f29-861563f79e64.png)
+
+（3）[server -> client] Handshake S0+S1+S2
+![image](https://user-images.githubusercontent.com/17688273/151473719-61559bd7-9bcb-4a0a-80c4-2f77aa626a44.png)
+
+（4）[client -> server] Handshake C2
+![image](https://user-images.githubusercontent.com/17688273/151473808-244bb8f1-271f-461c-add9-0bc591d5e7ad.png)
+
+（5）[client -> server] connect('live') 
+![image](https://user-images.githubusercontent.com/17688273/151473936-116230a5-0e98-44ec-8725-2edebb095c40.png)
+
+（6）[server -> client] Window Acknowledgement Size
+
+（7）[client -> server] createStream()
+![image](https://user-images.githubusercontent.com/17688273/151474326-69d445c4-de41-4b11-a380-1e063ec4c3c8.png)
+
+（8）[server -> client] _result()
+![image](https://user-images.githubusercontent.com/17688273/151474412-ba200052-2448-4e82-a2ed-dde50fb10a12.png)
+
+（9）[client -> server] getStreamLength(); player('zhangbiwu')
+![image](https://user-images.githubusercontent.com/17688273/151474561-5ba0db97-af49-4455-9e36-2179f6bfec18.png)
+
+（10）[server -> client] Audio; Video
+![image](https://user-images.githubusercontent.com/17688273/151474816-e83d5de2-fea8-4af8-ac49-3e3bb390f408.png)
+
+
 # FAQ
 
 ## RTMP直播推流中需要注意的点
