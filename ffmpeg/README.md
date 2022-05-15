@@ -62,3 +62,4 @@ ffmpeg软件转码太耗cpu
 
 - [基于主观感兴趣区域的视频编码实践](https://cloud.tencent.com/developer/article/1676158)
 
+- [FFmpeg：视频转码、剪切、合并、播放速调整](https://fzheng.me/2016/01/08/ffmpeg/)
