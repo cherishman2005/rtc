@@ -1,5 +1,9 @@
 # ffmpeg
 
+## ffmpeg常见使用
+
+- [ffmpeg常见使用](./ffmpeg常见使用.md)
+
 ## 码率控制
 
 视频编码时进行码率控制bit-rate，在同等视频质量的情况下节约带宽；
@@ -62,4 +66,3 @@ ffmpeg软件转码太耗cpu
 
 - [基于主观感兴趣区域的视频编码实践](https://cloud.tencent.com/developer/article/1676158)
 
-- [FFmpeg：视频转码、剪切、合并、播放速调整](https://fzheng.me/2016/01/08/ffmpeg/)
