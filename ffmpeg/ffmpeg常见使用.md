@@ -23,3 +23,5 @@ ffmpeg -i TheOrigin.mp4 -vf  "setpts=4*PTS" DownTheOrigin.mp4
 最基本的原则就是不能影响到一个GOP内的解码。
 
 # 参考链接
+
+- [FFmpeg：视频转码、剪切、合并、播放速调整](https://fzheng.me/2016/01/08/ffmpeg/)
