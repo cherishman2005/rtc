@@ -47,6 +47,18 @@ ffmpeg软件转码太耗cpu
 
 （2）facemark加特效；
 
+### ffmpeg -threads
+
+```
+-threads 0 (optimal);
+
+-threads 1 (single-threaded);
+
+-threads 2 (2 threads for e.g. an Intel Core 2 Duo);
+
+none (the default, also optimal).
+```
+
 # 参考链接
 
 - [使用ffmpeg命令行实现一入多出转码](https://blog.csdn.net/xiaoluer/article/details/81346285)
