@@ -3,6 +3,13 @@
 ## SRS-librtmp
 
 编译SRS时，会自动编译srs-librtmp，譬如：
+```
+./configure --disable-all --with-librtmp && make 
+```
+或
+```
+./configure --with-librtmp --without-ssl
+```
 
 编译会生成srs-librtmp和对应的实例。
 
