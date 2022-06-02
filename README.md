@@ -77,6 +77,8 @@
 
 * 优先级高的问题：播放失败率太高；
 
+* 为什么大家偏向 srs-librtmp去推rtmp流  ，而不用ffmpeg librtmp去推流？
+
 # 参考链接
 
 - [FFmpeg 音视频开发 20 年](https://jishuin.proginn.com/p/763bfbd5802d)
