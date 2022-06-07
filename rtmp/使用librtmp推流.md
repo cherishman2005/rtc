@@ -1,4 +1,4 @@
-# 使用librtmp进行的简单推流
+# 使用librtmp推流
 
 ## 整体流程
 1、建立rtmp连接
@@ -8,10 +8,11 @@
 3、发送Audio和Video数据包
 
 ## 时间戳处理
+
 需要注意的是，无论是发送视频数据包还是音频数据包，时间戳一定要是递增的，否则会出现音频卡顿，视频闪烁一类的异常情况。
 
 下面是packet时间戳的伪代码：
-
+```
 double m_TimeStamp = 0;
 void Send_Audio()
 {
@@ -25,6 +26,8 @@ void Send_Video()
     double TimeStamp = GetTickCount64() - m_TimeStamp;
     SendVideoPacket(TimeStamp);
 }
+```
+
 下面是构造数据包的代码示例：
 
     if(nPacketType == RTMP_PACKET_TYPE_AUDIO)
