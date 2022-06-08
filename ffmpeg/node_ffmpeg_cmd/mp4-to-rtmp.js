@@ -3,7 +3,7 @@ const ffmpeg = require('fluent-ffmpeg');
 const ffmpegPath = "/usr/bin/ffmpeg";
 const inputPath = './vtest.mp4';
 const logo = './logo.png';  //水印
-const outputPath = 'rtmp://seaweedfs-test.yy.com/live/zhangbiwu';
+const outputPath = 'rtmp://seaweedfs-test.**.com/live/zhangbiwu';
 
 
 var command = ffmpeg(inputPath)
