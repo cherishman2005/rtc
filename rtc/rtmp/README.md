@@ -36,7 +36,7 @@ rtmp {
 
     server {
         listen 1935;
-        server_name service-test.yy.com; #for suffix wildcard matching of virtual host name
+        server_name service-test.**.com; #for suffix wildcard matching of virtual host name
 
         application live {
             live on;
