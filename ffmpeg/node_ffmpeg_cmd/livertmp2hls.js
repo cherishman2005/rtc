@@ -1,7 +1,7 @@
 var ffmpeg = require('fluent-ffmpeg');
 
 // make sure you set the correct path to your video file
-var proc = ffmpeg('rtmp://seaweedfs-test.yy.com/live/win', { timeout: 432000 })
+var proc = ffmpeg('rtmp://seaweedfs-test.**.com/live/win', { timeout: 432000 })
   // set video bitrate
   .videoBitrate(1024)
   // set h264 preset
