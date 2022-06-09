@@ -47,3 +47,4 @@ typedef enum {
 # 参考链接
 
 - [H264码流解析及NALU](https://www.cnblogs.com/jingzhishen/p/3965868.html)
+- [多媒体文件格式之FLV](https://www.cnblogs.com/jimodetiantang/p/8992425.html)
