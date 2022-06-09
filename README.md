@@ -5,7 +5,7 @@
 
 - [rtc技术介绍](rtc.md)
 - [音视频基础技术](doc/av/README.md)
-- [h264_nalu](./rtc/rtmp/h264_nalu.md)
+- [h264_nalu](rtmp/h264_nalu.md)
 
 ## ffmpeg
 
