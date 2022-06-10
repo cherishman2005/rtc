@@ -64,3 +64,4 @@ rtmp {
 ## rtmp压测工具
 
 - [https://github.com/ossrs/srs-bench](https://github.com/ossrs/srs-bench)
+- [ffmpeg支持h265](https://github.com/runner365/ffmpeg_rtmp_h265)
