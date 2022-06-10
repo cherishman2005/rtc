@@ -66,3 +66,4 @@ rtmp {
 - [https://github.com/ossrs/srs-bench](https://github.com/ossrs/srs-bench)
 - [ffmpeg支持h265](https://github.com/runner365/ffmpeg_rtmp_h265)
 - [librtmp支持h265](https://blog.csdn.net/qq_33795447/article/details/89457581)
+- [https://github.com/ossrs/srs/pull/1721](https://github.com/ossrs/srs/pull/1721)
