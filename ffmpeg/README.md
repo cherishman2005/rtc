@@ -8,6 +8,27 @@
 
 视频编码时进行码率控制bit-rate，在同等视频质量的情况下节约带宽；
 
+## ffmpeg extra_data
+
+引用AVCodecContext中对该数据成员的解释
+```
+/**
+     * some codecs need / can use extradata like Huffman tables.
+     * MJPEG: Huffman tables
+     * rv10: additional flags
+     * MPEG-4: global headers (they can be in the bitstream or here)
+     * The allocated memory should be AV_INPUT_BUFFER_PADDING_SIZE bytes larger
+     * than extradata_size to avoid problems if it is read with the bitstream reader.
+     * The bytewise contents of extradata must not depend on the architecture or CPU endianness.
+     * - encoding: Set/allocated/freed by libavcodec.
+     * - decoding: Set/allocated/freed by user.
+     */
+    uint8_t *extradata;
+    int extradata_size;
+```
+可见它针对不同的情况有不同的格式，而比较常用的情况就是我们对视频流进行写入文件操作时（某些情况下，如通过NV12格式编码的视频流数据），或则解码视频文件时需要我们去设置。此时extradata作为一个global headers，主要保存SPS、PPS等信息，下面就针对此种情况进行说明。
+
+
 ## ffmpeg性能压测
 
 ## 多个输入连接到单个输出文件
@@ -62,6 +83,7 @@ none (the default, also optimal).
 # 参考链接
 
 - [使用ffmpeg命令行实现一入多出转码](https://blog.csdn.net/xiaoluer/article/details/81346285)
+- [ffmpeg extra_data](https://blog.csdn.net/a812073479/article/details/74721119)
 
 - [opencv opencv4nodejs 安装和简单抠图](https://www.codenong.com/cs122064921/)
 
