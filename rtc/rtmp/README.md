@@ -132,8 +132,19 @@ bool SrsFlvVideo::h265(char *data, int size)
 ```
 
 srs服务器端支持h.265编码已修改完成，重新编译srs代码
+```
 ./configure && make && make install
-启动服务器: ./objs/srs -c conf/srs.conf 查看服务器是否启动成功：ps -ef | grep srs
+```
+
+启动服务器: 
+```
+./objs/srs -c conf/srs.conf
+```
+
+查看服务器是否启动成功：
+```
+ps -ef | grep srs
+```
 
 # FAQ
 
