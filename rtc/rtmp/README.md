@@ -59,7 +59,8 @@ rtmp {
 ```
 # srs支持h265
 
-1）vim src/app/srs_app_source.cpp
+1.vim src/app/srs_app_source.cpp
+
 在这个函数中 srs_error_t SrsSource::on_video(SrsCommonMessage* shared_video)
 找到if (!SrsFlvVideo::acceptable(shared_video->payload, shared_video->size))，跳转到SrsFlvVideo::acceptable（）函数定义中，下面修改内容如下：
 ```
@@ -85,7 +86,8 @@ bool SrsFlvVideo::acceptable(char* data, int size)
 }
 ```
 
-2）vim src/app/srs_app_source.cpp
+2. vim src/app/srs_app_source.cpp
+
 这个函数中 srs_error_t SrsSource::on_video_imp(SrsSharedPtrMessage* msg) 找到
 bool is_sequence_header = SrsFlvVideo::sh(msg->payload, msg->size) 这一行，跳转到sh()函数定义中
 ```
