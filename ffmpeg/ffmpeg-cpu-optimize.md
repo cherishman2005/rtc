@@ -36,3 +36,25 @@ cavlc
 cabac
 vlc  
 ac
+
+
+## AV_CODEC_FLAG_LOW_DELAY
+
+AV_CODEC_FLAG_LOW_DELAY该宏定义主要是应用于编码输出，降低输出的延时
+
+通过ffplay RTSP H264解码走读，并没有发现用于解码低延时
+
+通过测试例子设置AVCodecContext的flags:
+ flags |= AV_CODEC_FLAG_LOW_DELAY
+
+并没有达到实际的低延时解码的效果
+
+ 
+
+在编码过程中减低延时，可以设置AV_CODEC_FLAG_LOW_DELAY标志位
+
+针对特定的解码器mpeg4videodec，mpeg12dec等，可以实现解码低延时
+
+# 参考链接
+
+- [FFmpeg AV_CODEC_FLAG_LOW_DELAY剖析以及应用](https://blog.51cto.com/fengyuzaitu/3403507)
