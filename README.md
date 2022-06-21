@@ -80,6 +80,10 @@
 
 * 为什么大家偏向 srs-librtmp去推rtmp流  ，而不用ffmpeg librtmp去推流？
 
+* 抽帧截图： 无损压缩，有损压缩。 
+  
+  根据场景选择无损还是有损压缩。 一般的直播场景多考虑采用有损压缩：节约存储和带宽。
+
 # 参考链接
 
 - [FFmpeg 音视频开发 20 年](https://jishuin.proginn.com/p/763bfbd5802d)
