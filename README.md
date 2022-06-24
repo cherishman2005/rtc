@@ -87,3 +87,5 @@
 # 参考链接
 
 - [FFmpeg 音视频开发 20 年](https://jishuin.proginn.com/p/763bfbd5802d)
+- [I帧、P帧、B帧、GOP、IDR 和PTS, DTS之间的关系](https://www.cnblogs.com/yongdaimi/p/10676309.html)
+
