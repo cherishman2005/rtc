@@ -109,3 +109,4 @@ none (the default, also optimal).
 - [基于主观感兴趣区域的视频编码实践](https://cloud.tencent.com/developer/article/1676158)
 
 - [https://github.com/runner365/srt_encoder/wiki/How-to-compile-cn](https://github.com/runner365/srt_encoder/wiki/How-to-compile-cn)
+- [https://zhuanlan.zhihu.com/p/85895180](https://zhuanlan.zhihu.com/p/85895180)
