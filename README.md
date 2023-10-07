@@ -128,3 +128,4 @@ ffplay 是 ffmpeg 自带的跨平台播放器，使用 C 语言编写。当你�
 - [I帧、P帧、B帧、GOP、IDR 和PTS, DTS之间的关系](https://www.cnblogs.com/yongdaimi/p/10676309.html)
 - [https://jishuin.proginn.com/p/763bfbd75e45](https://jishuin.proginn.com/p/763bfbd75e45)
 - [webrtc编译](https://www.cnblogs.com/xl2432/p/13137531.html)
+- [webrtc编译](https://cloud.tencent.com/developer/article/2021897)
