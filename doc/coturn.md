@@ -4,14 +4,20 @@
 
 ### Allocate请求
 
-   客户端通过发送Allocate请求给STUN服务器，从而让STUN服务器为A用户开启一个relay端口。
+客户端通过发送Allocate请求给STUN服务器，从而让STUN服务器为A用户开启一个relay端口。
+
+![image](https://github.com/cherishman2005/rtc/assets/17688273/0e0d238d-d4e4-4f37-b95f-ff99648edc6d)
 
 a) 客户端A向STUN Port发送Allocate请求(图中绿色部分)
-** b) **STUN服务器接收到客户端A的Allocate请求，服务器一看是Allocate请求，则根据relay端口分配策略为A分配一个端口。
+
+b) STUN服务器接收到客户端A的Allocate请求，服务器一看是Allocate请求，则根据relay端口分配策略为A分配一个端口。
+
 c) 服务器发送response成功响应。在该response中包含XOR-RELAYED-ADDRESS属性。该属性值就是A的relay端口的异或结果。
+
 d) 客户端接收到response后，就知道了自己的relay地址。该relay地址是个公网地址，可以看作是客户端A在公网上的一个代理，任何想要联系A的客户 端，只要将数据发送到A的relay地址就可以了，具体的转发原理请看下一小节。
 
-Relay端口消息的转发
+### Relay端口消息的转发
+
 任何想要联系客户端A的人，只要知道客户端A的relay地址就可以了。
 
 （1）A的Relay端口接受其他客户端的消息
