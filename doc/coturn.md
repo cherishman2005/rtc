@@ -22,27 +22,39 @@ d) 客户端接收到response后，就知道了自己的relay地址。该relay�
 
 （1）A的Relay端口接受其他客户端的消息
 
+![image](https://github.com/cherishman2005/rtc/assets/17688273/8c41520e-10e1-44ce-b86d-8588903af388)
+
 如上图所示：因为客户端A位于NAT后，所以其他客户端无法和A建立直接的通信。但是客户端A在STUN服务器上申请了一个端口(上图中：A的relay端口)，其他客户端想要和A通信，那么只需要将信息发送到“A的relay端口”，STUN服务器会将从relay端口接收到的信息通过STUN Port发送给A。
 
 （2）A的响应消息原路返回
 A应答其他客户端发来的消息的时候，是通过原路返回的。
 
+![image](https://github.com/cherishman2005/rtc/assets/17688273/c79dfd9c-70c2-4ccb-bec5-c3b78dfe40ff)
 
 
-思考
+**思考**
+
 1.STUN服务器为什么不直接从A的relay端口把数据转发给A呢（如下图所示）？而非要从STUN端口发送？
 
+![image](https://github.com/cherishman2005/rtc/assets/17688273/336d3a7d-b742-4084-9bfb-0e2208899f6f)
+
+
 2.客户端A的响应消息在原路返回的时候，A的响应消息是先发送到了STUN Port，然后再经由A的relay Port发出的。那么A的relay Port是怎么知道它要把数据发送到哪呢？
-Refresh请求
+
+### Refresh请求
+
 STUN服务器给客户端A分配的relay地址都具有一定的有效时长，可能是30秒或者1分钟或者几十分钟。客户端如果需要STUN服务器一直为它开启这个端口，就需要定时的向STUN服务器发送请求，该请求用刷新relay端口的剩余时间。
 在标准的TURN（RFC 5766）协议中，客户端A向STUN服务器发送Allocate请求，STUN服务器在响应消息中添加了一个“LifeTime”的属性，该属性表示relay的存活时间。 客户端需要在relay的存活时间内周期性的调用REFRESH请求，服务端接收到REFRESH请求后，刷新剩余时间；当REFRESH请求中的lifetime属性为0时，说明是客户端主动要求关闭relay地址。
 
-STUN端口的保活
+### STUN端口的保活
+
 由于与STUN服务器通信使用的是UDP，所以为了保持一个长连接，需要客户端周期性的向STUN服务器的STUN Port发送心跳包。
 周期性心跳包的目的就是，使得NAT设备对客户端A的反射地址(Server Reflexive Address)一直有效。使得从STUN Port发送的数据能通过A的反射地址到达A。此处不理解的可以查阅“NAT 类型的分类以及NAT的作用”。
 此处解释了，7.2.2.3中的第一个问题，因为客户端A没有和relay Port保活，又由于NAT的特性，数据直接通过relay port转发给A时，NAT直接就丢弃了，所以A是收不到的。所以数据必须经过STUN服务器的STUN Port发送。
 
-Relay转发的时候添加STUN头（Send和Data请求）
+### Relay转发的时候添加STUN头（Send和Data请求）
+
+![image](https://github.com/cherishman2005/rtc/assets/17688273/1f09ceca-6136-494d-97dc-84e51e22dcca)
 
 如上图所示是B主动给A发消息：“Hello”，A回应“Hi”的过程。
 序号1、2、3、4、5为B的发送请求(蓝色箭头方向)；
