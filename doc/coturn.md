@@ -57,14 +57,23 @@ STUN服务器给客户端A分配的relay地址都具有一定的有效时长，�
 ![image](https://github.com/cherishman2005/rtc/assets/17688273/1f09ceca-6136-494d-97dc-84e51e22dcca)
 
 如上图所示是B主动给A发消息：“Hello”，A回应“Hi”的过程。
+
 序号1、2、3、4、5为B的发送请求(蓝色箭头方向)；
+
 序号6、7、8、9、10为A的回应，原路返回（绿色箭头方向）。
+
 注意：在“Hello”发送的过程中，1、2阶段时，发送的数据为裸的UDP数据。在4、5过程中，是被STUN协议包装过的“Hello”，称之为Data indication。
+
 同样在“Hi”发送的过程中，6、7阶段为被STUN协议包装过的“Hi”，称之为Send indication，9、10是裸的UDP数据。
+
 在4、5阶段，由于数据是从STUN Port转发下来的，为了能够让客户端A知道这个包是哪个客户端发来的，所以，STUN 协议对“Hello”进行了重新的包装，最主要的就是添加了一个XOR-PEER-ADDRESS属性，由裸数据包装成STUN协议的过程，我们称之为添加了STUN头。XOR-PEER-ADDRESS的内容就是客户端B的反射地址（Server Reflexive Address）。
+
 在6、7阶段，A的响应原路返回，为了能够让A的relay port知道最终发往哪个客户端，因此也为“Hi”添加了STUN头，也是添加了XOR-PEER-ADDRESS属性，内容就是客户端B的反射地址（Server Reflexive Address）。这样A的relay port就知道“Hi”的目的地址。
+
 第3阶段是：从A的relay端口收到数据，添加STUN头后，最后从STUN Port 发出的过程。
+
 第8阶段是：从STUN Port 接收到带STUN 头的数据，去掉STUN头，最后从A的relay端口发出的过程。
 
 客户端B主动发送信息给A的交互流程如上图所示，那么客户端A主动发送信息给客户端B的交互流程是怎样的呢，你能画出来吗？
-要知道客户端A主动发消息给客户端B，应该将消息发往客户端B的relay port哦。。
+
+要知道客户端A主动发消息给客户端B，应该将消息发往客户端B的relay port。
