@@ -1,5 +1,7 @@
 # webrtc摄像头权限设置
 
+chrome://settings/content
+
 chrome >> 更多 >> 设置
 
 ![image](https://github.com/cherishman2005/rtc/assets/17688273/3ed91308-62f0-43be-932d-a4acaa756a34)
