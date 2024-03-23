@@ -10,4 +10,5 @@
 
 ![image](https://github.com/cherishman2005/rtc/assets/17688273/31720a79-455b-423d-b0d7-28e585b1f841)
 
+* ffmpeg万能工具，画中画直播推流： 1路是webrtc直播推流，1路是点播视频，实现画中画。
 ![image](https://github.com/cherishman2005/rtc/assets/17688273/03ce530d-a2e3-4d20-b223-024605e8e1f1)
