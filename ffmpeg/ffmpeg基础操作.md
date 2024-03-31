@@ -9,7 +9,7 @@
 2. 通过水印实现画中画效果
 
 ![image](https://github.com/cherishman2005/rtc/assets/17688273/31720a79-455b-423d-b0d7-28e585b1f841)
-
+https://github.com/cherishman2005/rtc/blob/master/ffmpeg/ffmpeg%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C.md
 3. ffmpeg万能工具，画中画直播推流： 1路是webrtc直播推流，1路是点播视频，实现画中画。
 ![image](https://github.com/cherishman2005/rtc/assets/17688273/03ce530d-a2e3-4d20-b223-024605e8e1f1)
 
@@ -20,3 +20,11 @@
 5. 2路混流，上下分布
 
 ![image](https://github.com/cherishman2005/rtc/assets/17688273/5e177c13-72d8-4c82-9068-d7a8c4f4c180)
+
+# FAQ
+
+## 2路混画在播放过程中出现花屏
+
+![a6ec105ee4e0ac775d044739017fb8c](https://github.com/cherishman2005/rtc/assets/17688273/cdbf75dd-6225-4022-a9bd-fb1f7b06b30b)
+
+这种混画，出现花屏 有没有定位思路， 或解决方法？
