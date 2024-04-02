@@ -17,7 +17,12 @@ https://github.com/cherishman2005/rtc/blob/master/ffmpeg/ffmpeg%E5%9F%BA%E7%A1%8
 
 ![image](https://github.com/cherishman2005/rtc/assets/17688273/d2530ac0-79e1-480e-b12f-354f33df9ac3)
 
-5. 2路混流，上下分布
+5. 2路混流，左右分布
+
+![image](https://github.com/cherishman2005/rtc/assets/17688273/eebb9541-a728-41e2-abc0-3e2acd7da720)
+
+
+6. 2路混流，上下分布
 
 ![image](https://github.com/cherishman2005/rtc/assets/17688273/5e177c13-72d8-4c82-9068-d7a8c4f4c180)
 
