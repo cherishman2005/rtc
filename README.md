@@ -19,7 +19,7 @@
 - [ffmpeg部分源码解读](doc/ffmpeg部分源码解读.md)
 - [ffmepg抽帧截图](ffmpeg/ffmepg抽帧截图.md)
 - [webrtc ffmpeg录制、转码](ffmpeg/ffmpeg_cmd.md)
-- [ffmpeg基础操作](./ffmpeg基础操作.md)
+- [ffmpeg基础操作](./ffmpeg/ffmpeg基础操作.md)
 
 ### I/P/B视频帧
 
