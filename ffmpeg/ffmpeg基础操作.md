@@ -26,6 +26,11 @@ https://github.com/cherishman2005/rtc/blob/master/ffmpeg/ffmpeg%E5%9F%BA%E7%A1%8
 
 ![image](https://github.com/cherishman2005/rtc/assets/17688273/5e177c13-72d8-4c82-9068-d7a8c4f4c180)
 
+7. webrtc -> sfu -> mcu 2路流混流（画中画）
+
+![image](https://github.com/cherishman2005/rtc/assets/17688273/e58ca175-fb68-4e1c-8cc8-68d773bb091d)
+
+
 # FAQ
 
 ## 2路混画在播放过程中出现花屏
