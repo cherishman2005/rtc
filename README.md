@@ -55,6 +55,11 @@
 
 - [sdp](/ffmpeg/sdp.md)
 
+## opencv
+
+* 直播增加特效（戴帽子）
+![image](https://github.com/user-attachments/assets/1ee0677a-483c-4524-83ab-e8b879777f6b)
+
 ## obs推流
 
 - [obs推流](https://github.com/cherishman2005/rtc/wiki/obs%E6%8E%A8%E6%B5%81)
