@@ -1,5 +1,7 @@
 # ffmpeg
 
+![image](https://github.com/user-attachments/assets/4d83422b-0b80-4949-a068-7ca9a11451c0)
+
 ## ffmpeg常见使用
 
 - [ffmpeg常见使用](./ffmpeg常见使用.md)
