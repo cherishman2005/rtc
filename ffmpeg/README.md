@@ -93,6 +93,13 @@ none (the default, also optimal).
 
 抽关键帧，讲道理不应该很占资源。识别I帧只需要读nalu头部就成，都不需要解码和重编码。抽取B、P帧重新组成视频倒有可能。
 
+## 画中画
+
+画中画，如果1路视频流已经结束了。但是另外1路还在继续播放，怎么让不出现黑屏（如用最后1张图片，或者1个默认图片填补）？
+
+![47b3b97c872710f71837634bde77f63](https://github.com/user-attachments/assets/c9752032-0b9f-46b2-9321-b2960c888300)
+
+
 # 参考链接
 
 - [使用ffmpeg命令行实现一入多出转码](https://blog.csdn.net/xiaoluer/article/details/81346285)
