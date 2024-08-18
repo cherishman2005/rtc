@@ -1,4 +1,4 @@
-# ffmpeg 2路视频流混画.
+# ffmpeg 2路视频流混画
 
 ## 2路视频左右显示（hvstack）
 
