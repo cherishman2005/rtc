@@ -22,33 +22,39 @@ int main(int argc, char **argv)
     AVFifoBuffer *list = av_fifo_alloc(sizeof(MyData) * 10);
     read_space = av_fifo_size(list);
     wirte_space = av_fifo_space(list);
-    av_log(NULL, AV_LOG_INFO, "read_space: %d,wirte_space: %d \n",read_space,wirte_space);
+    av_log(NULL, AV_LOG_INFO, "read_space: %d, wirte_space: %d \n", read_space, wirte_space);
 
     av_fifo_grow(list,sizeof(MyData) * 5);
     read_space = av_fifo_size(list);
     wirte_space = av_fifo_space(list);
-    av_log(NULL, AV_LOG_INFO, "read_space: %d,wirte_space: %d \n",read_space,wirte_space);
+    av_log(NULL, AV_LOG_INFO, "read_space: %d, wirte_space: %d \n", read_space, wirte_space);
 
     MyData myData;
-    for(int i=0; i<5 ; i++){
+    for (int i=0; i<5 ; i++) {
         myData.a = i;
         myData.b = i;
         myData.c = i;
-        av_fifo_generic_write(list, &myData, sizeof(myData), NULL);
+        av_fifo_generic_write(list, &myData, sizeof(myData), nullptr);
     }
     read_space = av_fifo_size(list);
     wirte_space = av_fifo_space(list);
-    av_log(NULL, AV_LOG_INFO, "read_space: %d,wirte_space: %d \n",read_space,wirte_space);
+    av_log(NULL, AV_LOG_INFO, "read_space: %d, wirte_space: %d \n", read_space, wirte_space);
 
 
     MyData myData2;
-    av_fifo_generic_read(list, &myData2, sizeof(myData2), NULL);
-    av_log(NULL, AV_LOG_INFO, "myData2: %d, %d, %d \n",myData2.a,myData2.b,myData2.c);
-    av_fifo_generic_read(list, &myData2, sizeof(myData2), NULL);
-    av_log(NULL, AV_LOG_INFO, "myData2: %d, %d, %d \n",myData2.a,myData2.b,myData2.c);
+    av_fifo_generic_read(list, &myData2, sizeof(myData2), nullptr);
+    av_log(NULL, AV_LOG_INFO, "myData2: %d, %d, %d \n", myData2.a, myData2.b, myData2.c);
+    av_fifo_generic_read(list, &myData2, sizeof(myData2), nullptr);
+    av_log(NULL, AV_LOG_INFO, "myData2: %d, %d, %d \n", myData2.a, myData2.b, myData2.c);
     read_space = av_fifo_size(list);
     wirte_space = av_fifo_space(list);
-    av_log(NULL, AV_LOG_INFO, "read_space: %d,wirte_space: %d \n",read_space,wirte_space);
+    av_log(NULL, AV_LOG_INFO, "read_space: %d, wirte_space: %d \n", read_space, wirte_space);
+
+    while (av_fifo_size(list)) {
+        MyData tmp;
+        av_fifo_generic_read(list, &tmp, sizeof(tmp), nullptr);
+        av_log(NULL, AV_LOG_INFO, "tmp: %d, %d, %d \n", tmp.a, tmp.b, tmp.c);
+    }
 
     av_fifo_freep(&list);
 
