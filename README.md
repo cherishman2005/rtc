@@ -23,6 +23,7 @@
 - [ffmepg抽帧截图](ffmpeg/ffmepg抽帧截图.md)
 - [webrtc ffmpeg录制、转码](ffmpeg/ffmpeg_cmd.md)
 - [ffmpeg基础操作](./ffmpeg/ffmpeg基础操作.md)
+- [AVFrame的释放](./doc/AVFrame的释放.md)
 
 ### I/P/B视频帧
 
