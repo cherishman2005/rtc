@@ -136,6 +136,11 @@ https://jishuin.proginn.com/p/763bfbd75e45
 
 ffplay 是 ffmpeg 自带的跨平台播放器，使用 C 语言编写。当你在编译 ffmpeg 添加如下参数 「--enable-ffplay」 的时候 ，编译完成会在 「output/bin/」  下产生一个 ffplay  可执行文件，使用 「ffplay xxx.mp4」 就可以播放一个媒体文件，它主要是以 ffmpeg + sdl 实现的一个播放器。其实大名鼎鼎的 ijkplayer 就是基于 ffplay.c 进行的二次开发，所以掌握 ffplay 原理对我们开发播放器有非常大的帮助。
 
+# 声明
+
+* 做一个非常有信念感的人，必须把一件事情做好，做到极致。
+
+
 # 参考链接
 
 - [FFmpeg 音视频开发 20 年](https://jishuin.proginn.com/p/763bfbd5802d)
