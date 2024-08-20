@@ -5,3 +5,7 @@ AVFrame申请，一般通过av_frame_alloc的方式申请；
 
 如果申请了data空间，需要再释放该AVFrame时，需要首先利用av_freep(AVFrame->data[0])，对其中的data空间进行释放；
 然后使用av_frame_free对AVFrame进行释放。
+
+## av_frame_free和av_frame_unref区别
+
+av_frame_unref函数会将AVFrame中的数据缓冲区引用计数减一，如果引用计数为0，会自动释放数据缓冲区的内存。 而av_frame_free函数则会释放AVFrame本身的内存，因此在释放AVFrame时需要先确保数据缓冲区的内存已经被正确释放。
