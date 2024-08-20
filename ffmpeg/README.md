@@ -104,6 +104,10 @@ none (the default, also optimal).
 
 ![47b3b97c872710f71837634bde77f63](https://github.com/user-attachments/assets/c9752032-0b9f-46b2-9321-b2960c888300)
 
+## 混画时高度是设定配置的2倍时的画面
+
+![image](https://github.com/user-attachments/assets/c887c7df-0236-400d-97cd-39ba1526c600)
+
 
 # 参考链接
 
