@@ -1,4 +1,4 @@
-#【FFMPEG】AVFrame的释放
+# 【FFMPEG】AVFrame的释放
 
 AVFrame申请，一般通过av_frame_alloc的方式申请；
 但是，如果对AVFrame其中的data成员进行赋值，需要通过类似av_image_alloc的方式申请data的空间。
