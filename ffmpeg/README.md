@@ -11,6 +11,9 @@
 ![image](https://github.com/user-attachments/assets/9be192d6-8cb7-4632-bd0a-86177adca2ec)
 
 
+![image](https://github.com/user-attachments/assets/243f2952-f76d-4403-b047-839df8aef370)
+
+
 ### 2路视频混画
 
 - [2路视频流混画](./ffmpeg-2路视频流混画.md)
@@ -91,6 +94,13 @@ ffmpeg软件转码太耗cpu
 
 none (the default, also optimal).
 ```
+
+# 小结
+
+* 场景1：要做一个比较常用的转码服务，可以采用golang+ffmpeg命令开发，做一个paas平台服务；
+* 场景2：如果不是非长期的服务，直接采用ffmpeg命令；
+* 场景2： 如果是直播服务，做一些混画，最好是采用ffmpeg c++开发出基础服务。
+
 
 # FAQ
 
