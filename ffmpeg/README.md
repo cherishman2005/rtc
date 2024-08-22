@@ -20,6 +20,12 @@
 ABR： 平均码率模式；
 
 
+* 编码器
+
+![image](https://github.com/user-attachments/assets/a0d112ab-e004-4b50-8911-a0dbeb3ad725)
+
+
+
 ### 2路视频混画
 
 - [2路视频流混画](./ffmpeg-2路视频流混画.md)
