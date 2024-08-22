@@ -8,6 +8,8 @@
 
 - [ffmpeg基础操作](./ffmpeg基础操作.md)
 
+![image](https://github.com/user-attachments/assets/9be192d6-8cb7-4632-bd0a-86177adca2ec)
+
 
 ### 2路视频混画
 
