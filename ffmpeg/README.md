@@ -13,6 +13,12 @@
 
 ![image](https://github.com/user-attachments/assets/243f2952-f76d-4403-b047-839df8aef370)
 
+![image](https://github.com/user-attachments/assets/f0cdc41a-dfc7-45a6-80a8-c65998fa5ee2)
+
+可变码率；
+
+ABR： 平均码率模式；
+
 
 ### 2路视频混画
 
