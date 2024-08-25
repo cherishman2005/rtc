@@ -134,6 +134,11 @@ none (the default, also optimal).
 
 ![image](https://github.com/user-attachments/assets/c887c7df-0236-400d-97cd-39ba1526c600)
 
+## 混画中黑屏问题怎么解决
+
+* 如果2路视频流混流，出现1路流已经关闭，出现黑屏。怎么解决？
+![image](https://github.com/user-attachments/assets/d5a46c04-b535-404e-b892-51f45508e16a)
+
 
 # 参考链接
 
