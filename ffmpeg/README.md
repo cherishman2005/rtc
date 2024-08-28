@@ -131,6 +131,13 @@ none (the default, also optimal).
 
 * 估计很多人都没注意到这个情况。
 
+## ffmpeg c++ transcode推流，rtmp拉流播放，时间戳有问题
+
+ffmpeg c++ transcode推流，rtmp拉流播放，时间戳有问题。 -- 应该是参数pts，dts等参数有问题。
+
+![image](https://github.com/user-attachments/assets/3f2135c8-590b-4bed-a650-1b951d4ff05a)
+
+
 # 参考链接
 
 - [使用ffmpeg命令行实现一入多出转码](https://blog.csdn.net/xiaoluer/article/details/81346285)
