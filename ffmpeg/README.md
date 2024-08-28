@@ -137,8 +137,12 @@ none (the default, also optimal).
 ## 混画中黑屏问题怎么解决
 
 * 如果2路视频流混流，出现1路流已经关闭，出现黑屏。怎么解决？
+
 ![image](https://github.com/user-attachments/assets/d5a46c04-b535-404e-b892-51f45508e16a)
 
+## 为什么视频流解析 出来的第一帧是黑屏？
+
+* 估计很多人都没注意到这个情况。
 
 # 参考链接
 
