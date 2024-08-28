@@ -133,10 +133,11 @@ none (the default, also optimal).
 
 ## ffmpeg c++ transcode推流，rtmp拉流播放，时间戳有问题
 
-ffmpeg c++ transcode推流，rtmp拉流播放，时间戳有问题。 -- 应该是参数pts，dts等参数有问题。
-
 ![image](https://github.com/user-attachments/assets/3f2135c8-590b-4bed-a650-1b951d4ff05a)
 
+1. ffmpeg c++ transcode推流，rtmp拉流播放，时间戳有问题。 -- 应该是参数pts，dts， time_base等参数设置有问题？
+
+2. 另外打开播放器 第一次播放 很慢才有画面，或者要再开一次才播放。 -- I帧 相关参数 没有设置好？
 
 # 参考链接
 
