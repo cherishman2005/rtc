@@ -145,6 +145,7 @@ none (the default, also optimal).
 
 ![image](https://github.com/user-attachments/assets/f48d9035-a84b-40fb-a9e8-bf5c8cac9386)
 
+* 开始没有初始化好，可能就是随机化的值，然后在转化过程中出现如上值。
 
 # 参考链接
 
