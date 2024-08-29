@@ -139,6 +139,13 @@ none (the default, also optimal).
 
 2. 另外打开播放器 第一次播放 很慢才有画面，或者要再开一次才播放。 -- I帧 相关参数 没有设置好？
 
+## 同一视频解码的pkt->pts不是单调递增
+
+同一视频解码的pkt->pts不是单调递增，不是相近，并且差值很大。
+
+![image](https://github.com/user-attachments/assets/f48d9035-a84b-40fb-a9e8-bf5c8cac9386)
+
+
 # 参考链接
 
 - [使用ffmpeg命令行实现一入多出转码](https://blog.csdn.net/xiaoluer/article/details/81346285)
