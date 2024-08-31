@@ -147,6 +147,13 @@ none (the default, also optimal).
 
 * 开始没有初始化好，可能就是随机化的值，然后在转化过程中出现如上值。
 
+## 同一条流，观看端时间戳不一致
+
+通过2个播放器（观看端）拉取同1个直播视频流时，时间戳相差很大。
+
+![image](https://github.com/user-attachments/assets/f8bf8928-0256-438f-8801-da1e1a74a593)
+
+
 # 参考链接
 
 - [使用ffmpeg命令行实现一入多出转码](https://blog.csdn.net/xiaoluer/article/details/81346285)
