@@ -153,6 +153,10 @@ none (the default, also optimal).
 
 ![image](https://github.com/user-attachments/assets/f8bf8928-0256-438f-8801-da1e1a74a593)
 
+## 直播观看端只能播放2分钟就断线（断播）
+
+![image](https://github.com/user-attachments/assets/980b4ea9-6b04-4a14-bf4d-1bc68400d272)
+
 
 # 参考链接
 
