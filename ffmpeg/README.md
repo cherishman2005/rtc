@@ -157,6 +157,10 @@ none (the default, also optimal).
 
 ![image](https://github.com/user-attachments/assets/980b4ea9-6b04-4a14-bf4d-1bc68400d272)
 
+## 相同图片AVFrame编码2~3次
+
+![image](https://github.com/user-attachments/assets/3c83b295-1b28-4aba-82cc-053a2a61f1e1)
+
 
 # 参考链接
 
