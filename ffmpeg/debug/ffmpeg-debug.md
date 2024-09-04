@@ -66,7 +66,7 @@ do_video_out imwrite video_size:512x288, frame->pts:38076, imgname:./imgtmp/3807
 
 ![image](https://github.com/user-attachments/assets/b2ba18b4-2347-40b9-b2b8-aab34e7eb4c0)
 
-* 查看ffmpeg源码，ffmpeg应该有去重机制。
+* 查看ffmpeg源码，ffmpeg应该有去重机制。怎么做的去重？
 ```
     if (print_prefix && (flags & AV_LOG_SKIP_REPEATED) && !strcmp(line, prev) &&
         *line && line[strlen(line) - 1] != '\r'){
