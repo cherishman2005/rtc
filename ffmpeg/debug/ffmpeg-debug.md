@@ -60,3 +60,8 @@ do_video_out imwrite video_size:512x288, frame->pts:38074, imgname:./imgtmp/3807
 send_frame_to_filters input:#0 codec_type:0, decoded_frame:0x4ee6100, video_size:512x288, ist->decoded_frame->pts:38076
 do_video_out imwrite video_size:512x288, frame->pts:38076, imgname:./imgtmp/38076-48764.jpg, success:1, nb_frames:0
 ```
+
+## 原生ffmpeg pts单调递增
+
+
+![image](https://github.com/user-attachments/assets/b2ba18b4-2347-40b9-b2b8-aab34e7eb4c0)
