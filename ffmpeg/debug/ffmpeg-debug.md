@@ -1,6 +1,6 @@
 # ffmpeg c++ debug
 
-##  pts重复
+##  pts重复 [libx264 @ 0x43a6540] non-strictly-monotonic PTS
 
 ```
 send_frame_to_filters input:#0 codec_type:0, decoded_frame:0x4ee6100, video_size:512x288, ist->decoded_frame->pts:38038
