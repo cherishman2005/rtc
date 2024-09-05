@@ -86,3 +86,9 @@ do_video_out imwrite video_size:512x288, frame->pts:38076, imgname:./imgtmp/3807
 * pts非严格单调的原因是 重复对同一个视频帧进行编码
 
 ![image](https://github.com/user-attachments/assets/a15114db-b072-42f1-be49-667a666bcb70)
+
+
+* 解决问题后不再对同一视频帧进行编码
+
+![image](https://github.com/user-attachments/assets/396b0fe0-10fe-4097-94d1-eb49f868b490)
+
