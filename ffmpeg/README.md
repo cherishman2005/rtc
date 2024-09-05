@@ -166,6 +166,8 @@ none (the default, also optimal).
 
 将帧率fps=15调整为fps=30，传统编码 补帧方式 就是 拷贝之前的一帧。提高帧率的意义在哪里？
 
+- [补帧方式提高帧率的意义](./补帧方式提高帧率的意义.md)
+
 # 参考链接
 
 - [使用ffmpeg命令行实现一入多出转码](https://blog.csdn.net/xiaoluer/article/details/81346285)
