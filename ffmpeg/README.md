@@ -103,6 +103,13 @@ none (the default, also optimal).
 
 # FAQ
 
+## 怎样做到极致的用户体验
+
+* 播放秒开
+
+* 无卡顿
+
+
 ## ffmpeg rtp转码时端口怎么分配？
 
 ## ffmpeg抽帧截图
