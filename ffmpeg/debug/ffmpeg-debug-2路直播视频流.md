@@ -10,6 +10,13 @@
 
 ## ffmpeg-debug-2路视频上下分布
 
+* 问题： 下半视频时而正常，时而花屏。
+
+![image](https://github.com/user-attachments/assets/b68951ea-4201-4188-a212-bf08b0687345)
+
+![image](https://github.com/user-attachments/assets/ac8dae4b-0fb2-425d-8bba-b38cedeb8b82)
+
+
 
 ## ffmpeg-debug-2路视频左右分布
 
