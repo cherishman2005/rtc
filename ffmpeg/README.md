@@ -178,6 +178,10 @@ none (the default, also optimal).
 
 - [补帧方式提高帧率的意义](./补帧方式提高帧率的意义.md)
 
+
+## transcode混流时怎么判定视频流已解决？
+
+
 # 参考链接
 
 - [使用ffmpeg命令行实现一入多出转码](https://blog.csdn.net/xiaoluer/article/details/81346285)
