@@ -11,6 +11,9 @@
 
 * 【原因】帧同步没有处理好，已解决
 
+![image](https://github.com/user-attachments/assets/992da2e0-c8fb-45c8-9bbe-b30635f8cb23)
+
+
 ## ffmpeg-debug-2路视频上下分布
 
 * 问题： 下半视频时而正常，时而花屏。
