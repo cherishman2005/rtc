@@ -9,6 +9,7 @@
 
 ![image](https://github.com/user-attachments/assets/8280231a-50fe-4e63-b708-9c501cf1be52)
 
+* 【原因】帧同步没有处理好，已解决
 
 ## ffmpeg-debug-2路视频上下分布
 
@@ -23,6 +24,11 @@
 * 如果是相同的流混流，不会有异常 -- 说明还是同步没有处理好
 
 ![image](https://github.com/user-attachments/assets/158a2ebd-fcce-48fa-93ca-99811a34dc5f)
+
+
+### 【原因】帧同步没有处理好，已解决
+
+![image](https://github.com/user-attachments/assets/fd1cee49-1954-4ae4-92d1-d6684ea207b8)
 
 
 ## ffmpeg-debug-2路视频左右分布
