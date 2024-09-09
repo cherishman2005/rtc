@@ -37,6 +37,7 @@
 
 ![image](https://github.com/user-attachments/assets/36362ad0-ab64-427a-84a7-fdd904fbe91f)
 
+没有问题，因为最后的视频流，最后一帧就是黑屏。-- 右下角有个水印。
 
 
 ## ffmpeg-debug-2路视频左右分布
