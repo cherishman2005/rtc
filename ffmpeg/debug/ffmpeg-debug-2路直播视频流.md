@@ -20,5 +20,10 @@
 
 
 
+* 如果是相同的流混流，不会有异常 -- 说明还是同步没有处理好
+
+![image](https://github.com/user-attachments/assets/158a2ebd-fcce-48fa-93ca-99811a34dc5f)
+
+
 ## ffmpeg-debug-2路视频左右分布
 
