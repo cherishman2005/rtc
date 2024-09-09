@@ -33,10 +33,17 @@
 
 ![image](https://github.com/user-attachments/assets/fd1cee49-1954-4ae4-92d1-d6684ea207b8)
 
+### 1路视频结束后对应的画面一直黑屏，怎么优化？
+
+![image](https://github.com/user-attachments/assets/36362ad0-ab64-427a-84a7-fdd904fbe91f)
+
+
 
 ## ffmpeg-debug-2路视频左右分布
 
 ![image](https://github.com/user-attachments/assets/50c00656-e404-4130-bed4-dc8273fc4488)
+
+
 
 # FAQ
 
