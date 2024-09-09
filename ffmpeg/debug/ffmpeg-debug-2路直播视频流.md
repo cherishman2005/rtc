@@ -36,5 +36,4 @@
 
 ## ffmpeg-debug-2路视频左右分布
 
-![Uploading image.png…]()
-
+![image](https://github.com/user-attachments/assets/50c00656-e404-4130-bed4-dc8273fc4488)
