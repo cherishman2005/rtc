@@ -5,6 +5,8 @@
 
 画中画的图片 出现闪烁： -- 待解决
 
+在很多直播分享的场景 也会遇到这种情况。（如主画面是PPT，分享人在小窗口）
+
 ![image](https://github.com/user-attachments/assets/8280231a-50fe-4e63-b708-9c501cf1be52)
 
 
