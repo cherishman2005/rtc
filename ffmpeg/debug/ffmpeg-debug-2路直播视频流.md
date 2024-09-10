@@ -39,6 +39,10 @@
 
 没有问题，因为最后的视频流，最后一帧就是黑屏。-- 右下角有个水印。
 
+### 上下分布时，下半部分有瑕疵--黑边
+
+![image](https://github.com/user-attachments/assets/a400d157-75a8-4834-b7bd-43e993098110)
+
 
 ## ffmpeg-debug-2路视频左右分布
 
