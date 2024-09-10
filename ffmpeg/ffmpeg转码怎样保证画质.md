@@ -27,5 +27,5 @@
 ## 设置示例
 
 ```
-./ffmpeg -i test.mp4 -c:v libx264 -c:a aac -crf 18 -f mp4 test1.mp4
+./ffmpeg -i test.mp4 -c:v libx264 -c:a aac -crf 23 -f mp4 test1.mp4
 ```
