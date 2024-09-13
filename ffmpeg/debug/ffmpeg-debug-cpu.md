@@ -26,3 +26,7 @@
 ![image](https://github.com/user-attachments/assets/0337b615-8467-40ce-82b6-6debeb5d3ef8)
 
 转码16核都快用完了。
+
+* 直播转码消耗的cpu资源好一些
+
+![image](https://github.com/user-attachments/assets/68e75863-d9c6-4b7f-9dbf-04893b19930d)
