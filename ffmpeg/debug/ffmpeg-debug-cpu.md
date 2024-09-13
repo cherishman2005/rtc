@@ -19,3 +19,10 @@
 
 ![image](https://github.com/user-attachments/assets/ec7814ed-adaa-4733-a0c7-c7d21aedbd64)
 
+# FAQ
+
+## 音视频处理（转码）很烧钱
+
+![image](https://github.com/user-attachments/assets/0337b615-8467-40ce-82b6-6debeb5d3ef8)
+
+转码16核都快用完了。
