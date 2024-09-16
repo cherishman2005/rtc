@@ -35,6 +35,7 @@
 
 ![mixer architecture](./ffmpeg/mixer.png)
 
+![mixer2 architecture](./ffmpeg/mixer2.png)
 
 ### I/P/B视频帧
 
