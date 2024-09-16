@@ -33,9 +33,9 @@
 
 * 音视频混流混画
 
-![mixer architecture](./ffmpeg/mixer.png)
-
 ![mixer2 architecture](./ffmpeg/mixer2.png)
+
+![mixer architecture](./ffmpeg/mixer.png)
 
 ### I/P/B视频帧
 
