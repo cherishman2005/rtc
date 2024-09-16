@@ -212,3 +212,6 @@ none (the default, also optimal).
 - [FFmpeg视频抽帧那些事](https://zhuanlan.zhihu.com/p/85895180)
 
 - [https://github.com/0voice/audio_video_streaming](https://github.com/0voice/audio_video_streaming)
+
+- [https://cloud.tencent.com/developer/article/2176945](https://cloud.tencent.com/developer/article/2176945)
+
