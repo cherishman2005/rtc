@@ -7,3 +7,9 @@
 ## 基于ffmpeg c++ 后端 音视频处理工具
 
 ![2416242a2585740da599ca5b3652447](https://github.com/cherishman2005/rtc/assets/17688273/e383e51c-633c-448a-a16e-8126e25b3ca9)
+
+# FAQ
+
+## RTP SDP（Session Describe Protocol），会话描述协议 能否携带token鉴权信息？
+
+* 可以自定义字段，携带token信息
