@@ -13,3 +13,5 @@
 ## RTP SDP（Session Describe Protocol），会话描述协议 能否携带token鉴权信息？
 
 * 可以自定义字段，携带token信息
+
+## webrtc 2路流混流，有时会非常模糊，有什么好的解决方法？
