@@ -13,6 +13,9 @@
 
 # FAQ
 
+* 卡顿
+* 花屏
+
 ## RTP SDP（Session Describe Protocol），会话描述协议 能否携带token鉴权信息？
 
 * 可以自定义字段，携带token信息
