@@ -24,6 +24,8 @@
 
 * 如果是同步虚拟摄像头播放的，可能片源就是低画质的；然后在画面放大的情况下播放。
 
+## webrtc推流时怎样设置固定宽高？
+
 # 参考链接
 
 - [https://web.dev/articles/webrtc-basics?hl=zh-cn](https://web.dev/articles/webrtc-basics?hl=zh-cn)
