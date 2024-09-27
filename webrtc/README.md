@@ -29,6 +29,13 @@
 * webrtc推流过程中，宽高 会发生变化。webrtc推流时怎样设置固定宽高？
 * 视频编码时 分辨率发生变化 怎么办？
 
+### webrtc分辨率分析
+
+chrome://webrtc-internals/
+
+![image](https://github.com/user-attachments/assets/0343e15d-becc-487e-b0df-f6e99f325131)
+
+
 # 参考链接
 
 - [https://web.dev/articles/webrtc-basics?hl=zh-cn](https://web.dev/articles/webrtc-basics?hl=zh-cn)
