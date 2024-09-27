@@ -35,6 +35,13 @@ chrome://webrtc-internals/
 
 ![image](https://github.com/user-attachments/assets/0343e15d-becc-487e-b0df-f6e99f325131)
 
+## webrtc 点对点视频如何固定码率传输 达到视频播放分辨率不变的效果？
+
+设置了720p 1080p 分辨率 在网络抖动的情况下 分辨率发生了变话 如何让分辨率不变呢？
+
+* 方法1：RTCConfiguration enableCpuOveruseDetection=false 关闭分辨率变换；
+* 方法2：修改源码，调整固定帧率、定分辨率、自适应调整策略；
+
 
 # 参考链接
 
