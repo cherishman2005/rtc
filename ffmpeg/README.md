@@ -189,6 +189,8 @@ none (the default, also optimal).
 
 ## transcode混流时怎么判定视频流已结束？
 
+## ffmpeg混画过程中分辨率发生变化，怎么处理？
+
 
 # 参考链接
 
