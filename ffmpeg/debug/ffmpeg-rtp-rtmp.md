@@ -11,6 +11,11 @@ ffmpeg接收rtp流，转推rtmp流时， 运行一段时间后分辨率跳变。
 do_video_out avcodec_send_frame in_picture:0x3ab6000, video_size:960x540, enc:1280x720, Error occurred: -542398533:Generic error in an external library
 ```
 
+![image](https://github.com/user-attachments/assets/97147a01-92b5-4c17-9cb9-c913ae5fc32c)
+
+AVFrame视频帧分辨率与目标分辨率不一致时怎么 处理？
+
+
 ### 解决方法
 
 * 有不同的解决方案：
