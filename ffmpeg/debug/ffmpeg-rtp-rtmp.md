@@ -26,3 +26,10 @@ AVFrame视频帧分辨率与目标分辨率不一致时怎么 处理？
 ## rtp混流1分钟后断流
 
 * 控制信令进行优化。已解决
+
+## webrtc -> rtmp直播偶尔模糊
+
+webrtc -> rtmp直播中途出现模糊，然后再恢复。
+
+![image](https://github.com/user-attachments/assets/71b2dad1-7dc4-43b5-872f-2a675dd8e6be)
+
