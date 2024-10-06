@@ -33,3 +33,13 @@ webrtc -> rtmp直播中途出现模糊，然后再恢复。
 
 ![image](https://github.com/user-attachments/assets/71b2dad1-7dc4-43b5-872f-2a675dd8e6be)
 
+
+## RTP: dropping old packet received too late
+
+```
+2024-10-06 15:25:49 [mix][warn][56376]RTP: dropping old packet received too late
+2024-10-06 15:25:49 [mix][warn][56376]RTP: dropping old packet received too late
+2024-10-06 15:25:49 [mix][warn][56376]RTP: dropping old packet received too late
+2024-10-06 15:25:49 [mix][warn][56376]RTP: dropping old packet received too late
+2024-10-06 15:25:49 [mix][warn][56376]RTP: dropping old packet received too late
+```
