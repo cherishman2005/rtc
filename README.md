@@ -14,6 +14,9 @@
 
 - [音视频直播方案介绍](./音视频直播方案介绍.md)
 
+![image](https://github.com/user-attachments/assets/e88be1bf-3fd1-4982-a096-34dee021b8d9)
+
+
 ## rtc技术介绍
 
 - [rtc技术介绍](rtc.md)
