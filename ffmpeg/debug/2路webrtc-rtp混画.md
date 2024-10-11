@@ -7,3 +7,10 @@
 ![image](https://github.com/user-attachments/assets/c5398423-d574-431f-8420-c3f6de926036)
 
 ![image](https://github.com/user-attachments/assets/e694e7d8-1131-4264-819a-0b91f7266df5)
+
+
+## 分析
+
+花屏的帧率fps=30，可以适当降低帧率
+
+![image](https://github.com/user-attachments/assets/a65bb04f-bb96-4559-a2ff-0b837846cf9b)
