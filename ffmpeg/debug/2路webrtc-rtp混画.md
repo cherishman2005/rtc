@@ -1,6 +1,6 @@
 # 2路webrtc-rtp混画
 
-* 2路webrtc rtp混画，并转推rtmp
+* 2路webrtc rtp混画，并转推rtmp直播
 
 出现花屏
 
