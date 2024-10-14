@@ -14,3 +14,10 @@
 花屏的帧率fps=30，可以适当降低帧率
 
 ![image](https://github.com/user-attachments/assets/a65bb04f-bb96-4559-a2ff-0b837846cf9b)
+
+
+## 优化
+
+帧率调整为fps=15
+
+![image](https://github.com/user-attachments/assets/3f737d91-5dbb-4f0c-abdd-03869048870b)
