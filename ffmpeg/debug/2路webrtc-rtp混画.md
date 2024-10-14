@@ -18,6 +18,15 @@
 
 ## 优化
 
+### 降低帧率
+
 帧率调整为fps=15
 
 ![image](https://github.com/user-attachments/assets/3f737d91-5dbb-4f0c-abdd-03869048870b)
+
+降低帧率后，性能好了很多
+
+![image](https://github.com/user-attachments/assets/836278e9-d472-499c-8e8c-ed8dccd0b7ab)
+
+### 降低码率
+
