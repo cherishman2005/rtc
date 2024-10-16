@@ -30,3 +30,9 @@
 
 ### 降低码率
 
+### 优化效果
+
+逐步优化，现在清晰了很多
+
+![d8a25a1007e70feb971e92e66b5fa18](https://github.com/user-attachments/assets/625fecfc-2a82-4226-b7cd-d9a403eb2854)
+
