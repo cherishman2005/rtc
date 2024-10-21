@@ -50,3 +50,5 @@ chrome://webrtc-internals/
 - [https://web.dev/articles/webrtc-basics?hl=zh-cn](https://web.dev/articles/webrtc-basics?hl=zh-cn)
 
 - [解决ffmpeg拉流转发频繁丢包问题max delay reached. need to consume packet](https://www.cnblogs.com/tc310/p/11218236.html)
+
+- [https://www.nxrte.com/jishu/webrtc/11920.html](https://www.nxrte.com/jishu/webrtc/11920.html)
