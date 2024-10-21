@@ -1,5 +1,7 @@
 # ffmpeg
 
+## RTP: dropping old packet received too late
+
 ## max delay reached. need to consume packet
 
 ```
