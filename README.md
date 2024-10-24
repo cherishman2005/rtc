@@ -165,11 +165,17 @@
 
 （2）直播录制的视频花屏/绿屏，使用ffmpeg转码。ffmpeg解码、编码会丢掉一个GOP内剩余的异常帧。
 
+
 ## video player跨平台播放器
 
 https://jishuin.proginn.com/p/763bfbd75e45
 
 ffplay 是 ffmpeg 自带的跨平台播放器，使用 C 语言编写。当你在编译 ffmpeg 添加如下参数 「--enable-ffplay」 的时候 ，编译完成会在 「output/bin/」  下产生一个 ffplay  可执行文件，使用 「ffplay xxx.mp4」 就可以播放一个媒体文件，它主要是以 ffmpeg + sdl 实现的一个播放器。其实大名鼎鼎的 ijkplayer 就是基于 ffplay.c 进行的二次开发，所以掌握 ffplay 原理对我们开发播放器有非常大的帮助。
+
+## 为什么大家偏重做开播工具？
+
+因为开播工具准备好后，传输接入CDN，观众端使用标准的播放器播放；-- 就可以快速搭建娱乐直播、在线教育、电商直播系统。
+
 
 # 个人感悟
 
