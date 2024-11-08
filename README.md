@@ -16,7 +16,6 @@
 
 ![image](https://github.com/user-attachments/assets/e88be1bf-3fd1-4982-a096-34dee021b8d9)
 
-
 ## rtc技术介绍
 
 - [rtc技术介绍](rtc.md)
@@ -158,6 +157,12 @@
 * 抽帧截图： 无损压缩，有损压缩。 
   
   根据场景选择无损还是有损压缩。 一般的直播场景多考虑采用有损压缩：节约存储和带宽。
+
+## ffmpeg
+
+* ffmpeg编译
+  * 采用ffmpeg源码编译出ffmpeg执行文件，支持一些指令，就有一定的门槛。
+
 
 ## 直播出现花屏，蓝屏的问题处理
 
