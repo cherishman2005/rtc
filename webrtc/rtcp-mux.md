@@ -14,3 +14,8 @@ RTCP-MUX（RTCP Multiplexing）是一种技术，用于在单个端口上同时�
 ffmpeg -i input-stream -c:v copy -c:a copy -f rtp -rtcp-mux output-stream
 ```
 以上是一些常见的方式来启用 RTCP-MUX 功能，具体应根据您的实际用例和软件环境来选择适合的方法。
+
+
+# 小结
+
+* 网络传输中 端口是稀缺资源。
