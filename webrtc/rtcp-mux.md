@@ -19,3 +19,4 @@ ffmpeg -i input-stream -c:v copy -c:a copy -f rtp -rtcp-mux output-stream
 # 小结
 
 * 网络传输中 端口是稀缺资源。
+* 怎样确定rtcp-mux生效？
