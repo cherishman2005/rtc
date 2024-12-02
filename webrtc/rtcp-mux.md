@@ -1,5 +1,7 @@
 # rtcp-mux
 
+* rtcp-mux multiplexing RTCP on the same port
+
 RTCP-MUX（RTCP Multiplexing）是一种技术，用于在单个端口上同时传输 RTP 数据包和 RTCP 控制包。这样可以减少网络传输中的端口占用，并简化音视频流传输中的网络配置。在实际应用中，RTCP-MUX 通常与 RTP 数据流一起传输，以提高网络效率。
 
 在音视频传输中启用 RTCP-MUX，可以通过以下方法之一实现：
