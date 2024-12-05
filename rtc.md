@@ -51,6 +51,7 @@ zhangbiwu
 主要技术栈：
 
 * 后端研发
+  * service-mesh
   * nginx/openresty
-  * C/C++
-  * RTM/RTC
+  * webRTC
+  * C/C++/golang
