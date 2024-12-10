@@ -6,6 +6,8 @@
 
 ![image](https://github.com/user-attachments/assets/8b2f5517-7c18-43da-88ce-5be8261dc5ec)
 
+![image](https://github.com/user-attachments/assets/3176efe7-d34a-49b4-9597-6e2b2e87170f)
+
 
 ## webrtc P2P视频通话
 
