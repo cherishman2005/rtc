@@ -14,6 +14,15 @@ rtp组包h264
 
 # FAQ
 
+## packetization-mode:
+
+表示支持的封包模式
+* 当 packetization-mode 的值为 0 时或不存在时, 必须使用单一 NALU 单元模式.
+* 当 packetization-mode 的值为 1 时必须使用非交错(non-interleaved)封包模式.
+* 当 packetization-mode 的值为 2 时必须使用交错(interleaved)封包模式.
+
+这个参数不可以取其他的值.
+
 ## h264 nalu rtp封装时是否要带上 start code？
 
 在进行 H.264 NALU 到 RTP 封装时，通常情况下不需要在每个 NALU 前加上起始码（start code）。起始码在 H.264 视频码流中用于标识每个 NALU 的起始位置，但在 RTP 封装中，通常会根据不同的封装方式来区分不同的 NALU 单元，而不是使用起始码。
