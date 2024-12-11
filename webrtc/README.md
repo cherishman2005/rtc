@@ -67,3 +67,5 @@ chrome://webrtc-internals/
 - [解决ffmpeg拉流转发频繁丢包问题max delay reached. need to consume packet](https://www.cnblogs.com/tc310/p/11218236.html)
 
 - [https://www.nxrte.com/jishu/webrtc/11920.html](https://www.nxrte.com/jishu/webrtc/11920.html)
+
+- [浅谈WebRTC技术原理与应用](https://juejin.cn/post/7049971140474699789)
