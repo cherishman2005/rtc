@@ -6,6 +6,13 @@
 
 ![image](https://github.com/user-attachments/assets/8b2f5517-7c18-43da-88ce-5be8261dc5ec)
 
+## webrtc协议栈
+
+webrtc并不是单一的协议，包含了媒体、加密、传输层等在内的多个协议标准以及一套基于 JavaScript 的 API，它包括了音视频的采集、编解码、网络传输、显示等功能。通过简单易用的 JavaScript API ，在不安装任何插件的情况下，让浏览器拥有了 P2P音视频和数据分享的能力。
+
+![image](https://github.com/user-attachments/assets/3703be52-46fb-4347-a721-97057d008da1)
+
+
 ![image](https://github.com/user-attachments/assets/3176efe7-d34a-49b4-9597-6e2b2e87170f)
 
 
