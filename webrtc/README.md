@@ -82,3 +82,6 @@ chrome://webrtc-internals/
 - [https://www.nxrte.com/jishu/webrtc/11920.html](https://www.nxrte.com/jishu/webrtc/11920.html)
 
 - [浅谈WebRTC技术原理与应用](https://juejin.cn/post/7049971140474699789)
+
+- [总结开源实时音视频技术WebRTC的优缺点](http://www.52im.net/article-153-1.html)
+
