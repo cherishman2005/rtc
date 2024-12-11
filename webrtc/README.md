@@ -20,6 +20,11 @@ webrtc并不是单一的协议，包含了媒体、加密、传输层等在内�
 ![image](https://github.com/user-attachments/assets/522a9d2f-292b-45b2-b699-48eacb7f1d4b)
 
 
+### 简要过程
+
+![image](https://github.com/user-attachments/assets/3758335e-2f48-4244-920c-bd1083189e82)
+
+
 ## webrtc P2P视频通话
 
 ![image](https://github.com/cherishman2005/rtc/assets/17688273/34d3aa73-db48-4d91-9305-62c03200da85)
