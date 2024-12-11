@@ -48,6 +48,10 @@ webrtc并不是单一的协议，包含了媒体、加密、传输层等在内�
 * 卡顿
 * 花屏
 
+## webrtc技术使用
+
+WebRTC在被Google开源之前，其价值就已经得到了充分的认可。比如`QQ就使用了WebRTC的部分技术`。
+
 ## RTP SDP（Session Describe Protocol），会话描述协议 能否携带token鉴权信息？
 
 * 可以自定义字段，携带token信息
