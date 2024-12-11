@@ -1,5 +1,7 @@
 # webrtc
 
+2011年Google将WebRTC项目开源，让许多开发者眼前一亮，忍不住的加入了研究WebRTC的队伍中。`作为Google开源的技术，WebRTC并不是一个可以拿来就用，并且性能很好的产品`。
+
 - [rtp-h264](/webrtc/rtp-h264.md)
 
 ![webrt-opensource](./webrtc-opensource.png)
