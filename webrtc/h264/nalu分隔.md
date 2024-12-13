@@ -1,4 +1,4 @@
-# H.264 NALU分隔Annex B和avcC
+# H.264 NALU分隔Annex B和AVCC
 
 ## 分隔格式
 
@@ -15,7 +15,10 @@ Annex B的格式如下，start code有可能是{0 0 0 1}或者{0 0 1}，{0 0 0 1
 ([start code] NALU) | ( [start code] NALU) | ...
 ```
 
-### avcC
+![image](https://github.com/user-attachments/assets/8c3c38c4-bff8-4311-a612-9cac775d10a9)
+
+
+### AVCC
 
 这种分隔符通常用于文件存储例如mp4、flv，还有直播rtmp等
 
@@ -26,3 +29,5 @@ avcC的格式如下，字段length所占的字节长度由extradata中的NALULen
 ```
 ([extradata]) | ([length] NALU) | ([length] NALU) | ...
 ```
+
+![image](https://github.com/user-attachments/assets/085357fb-2fc0-40d6-8860-da01005ce7b3)
