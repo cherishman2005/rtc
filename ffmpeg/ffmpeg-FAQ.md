@@ -21,3 +21,10 @@
 ### 分析思路
 
 * tcpdump抓包分析
+
+
+## ffmpeg解析rtp avpacket
+
+rtp h264 nalu组装成avpacket，解码失败
+
+nalu一定要解码 sei吗？  -- 可以不用解析。
