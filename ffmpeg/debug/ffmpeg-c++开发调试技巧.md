@@ -1,6 +1,6 @@
 # ffmpeg-c++开发调试技巧
 
-推流端（rtp） -> rtp转推到rtmp -> nginx-rtmp收流 -> vlcplayer播放（或ffmpeg收流保存）
+推流端（rtp） -> rtp转推到rtmp（自研ffmpeg C++程序） -> nginx-rtmp收流 -> vlcplayer播放（或ffmpeg收流保存）
 
 ## 调试技巧
 
