@@ -1,5 +1,7 @@
 # ffmpeg
 
+- [ffmpeg-c++开发调试技巧](./ffmpeg-c++开发调试技巧.md)
+
 ## RTP: dropping old packet received too late
 
 ## max delay reached. need to consume packet
