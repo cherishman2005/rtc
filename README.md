@@ -42,9 +42,9 @@
 
 * WebRTC 是一系列协议的集合
 
-![webrtc-protocol](./img/webrtc-protocol.png)
-
 - [开源WebRTC项目技术选型](/webrtc/开源WebRTC项目技术选型.md)
+
+![webrtc-protocol](./img/webrtc-protocol.png)
 
 ## ffmpeg
 
