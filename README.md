@@ -42,9 +42,28 @@
 
 * WebRTC 是一系列协议的集合
 
+![webrtc-protocol](./img/webrtc-protocol.png)
+
 - [开源WebRTC项目技术选型](/webrtc/开源WebRTC项目技术选型.md)
 
-![webrtc-protocol](./img/webrtc-protocol.png)
+
+#### webrtc Qos性能
+
+##### NACK
+
+- [深入浅出WebRTC—NACK](https://www.nowcoder.com/discuss/641079659098066944)
+
+##### FEC
+
+##### JitterBuffer
+
+##### GCC
+
+##### Simulcast
+
+##### SVC
+
+
 
 ## ffmpeg
 
