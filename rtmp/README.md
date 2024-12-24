@@ -19,6 +19,12 @@
 
 SRS编译成功后，用户就可以使用这些库开发
 
+# FAQ
+
+## 是应该以 anxeb(startcode 0001 + nalu) 还是 avcc(len + nalu)格式 封装nalu，然后rtmp推流？
+
+在推流到RTMP服务器时，应该使用avcc(len + nalu)格式封装nalu。avcc是H.264标准中定义的格式，包含了NALU的长度信息，便于解析和处理。使用avcc格式可以确保RTMP服务器正常接收并解析视频数据。
+
 # 参考链接
 
 - [https://github.com/ossrs/srs-librtmp/issues/32](https://github.com/ossrs/srs-librtmp/issues/32)
