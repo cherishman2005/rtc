@@ -7,7 +7,7 @@ ffmpeg -loglevel debug -fflags +genpts -f sdp -i pipe:0 -map 0:v:0 -c:v copy -fl
 
 ffmpeg抽帧截图
 ```
-ffmpeg -i https://yy-ai-train.bj.bcebos.com/dataset/zhangbiwu/video/test.mp4 -y -f image2 -vframes 1 -vcodec png -f rawvideo -s 320x240 -ss 00:00:05 ./files/snapshot-01.png
+ffmpeg -i https://**.bj.bcebos.com/dataset/zhangbiwu/video/test.mp4 -y -f image2 -vframes 1 -vcodec png -f rawvideo -s 320x240 -ss 00:00:05 ./files/snapshot-01.png
 ```
 
 # 小结
