@@ -1,0 +1,64 @@
+# mediasoup-rust MultiOpus示例功能分析
+
+## 基本功能概述
+
+multiopus.rs 示例展示了如何使用mediasoup-rust实现多通道Opus音频流的处理和传输。该示例的核心功能是：
+
+1. 创建一个支持MultiOpus编码的服务器
+2. 通过Plain Transport接收外部RTP音频流（如GStreamer生成的流）
+3. 将接收到的音频流作为Producer提供给Router
+4. 通过WebRTC Transport和WebSocket信令向客户端提供音频流
+5. 客户端可以消费这个多通道音频流
+
+## 架构组件
+
+### 服务器端组件
+
+1. WorkerManager : 管理mediasoup Worker实例
+2. Worker : mediasoup的工作进程，处理媒体传输
+3. Router : 媒体路由器，配置为支持MultiChannelOpus编码
+4. Plain Transport : 接收外部RTP音频流的传输通道
+5. RTP Producer : 接收并处理外部音频流的生产者
+6. WebRTC Transport : 用于向客户端发送媒体流的WebRTC传输通道
+7. EchoConnection : 管理WebSocket连接和媒体流处理的核心Actor
+8. Consumer : 为客户端创建的媒体消费者
+
+### 客户端组件
+
+1. WebSocket客户端 : 处理与服务器的信令通信
+2. WebRTC Transport : 接收服务器媒体流的传输通道
+3. Consumer : 接收并处理服务器发送的媒体流
+4. 音频输出 : 播放接收到的多通道音频
+
+## MultiOpus编码特点
+
+MultiOpus（多通道Opus）是Opus音频编解码器的扩展，具有以下特点：
+
+1. 支持多达8个音频通道（而标准Opus最多支持2个通道）
+2. 通过单个RTP流传输多通道音频
+3. 适用于空间音频、环绕声等高级音频应用场景
+4. 保持了Opus编码的低延迟和高质量特性
+5. 在示例中通过特定的媒体编解码器配置启用
+
+## 通信流程
+
+1. 服务器初始化时创建Worker、Router和Plain Transport
+2. 服务器配置Plain Transport接收外部RTP音频流（示例中提供了GStreamer命令）
+3. 创建RTP Producer处理接收到的音频流
+4. 客户端通过WebSocket连接到服务器
+5. 服务器发送初始化消息，包含Consumer Transport选项和Router RTP能力
+6. 客户端发送自身RTP能力
+7. 客户端连接Consumer Transport（通过DTLS参数）
+8. 客户端请求消费特定Producer的媒体流
+9. 服务器创建Consumer并发送相关信息给客户端
+10. 客户端接收并播放多通道音频流
+
+## 与其他示例的区别
+
+与echo.rs和videoroom.rs相比，multiopus.rs的主要特点是：
+
+1. 专注于音频 : 仅处理音频流，不涉及视频
+2. 外部音频源 : 使用外部工具（如GStreamer）作为音频源
+3. Plain Transport : 使用Plain Transport接收外部RTP流，而不是WebRTC Transport
+4. 多通道音频 : 特别支持MultiOpus编码，实现多通道音频传输
+5. 单向流 : 仅从服务器到客户端的单向音频流，不支持客户端发送媒体
