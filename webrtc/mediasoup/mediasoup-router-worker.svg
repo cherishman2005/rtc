@@ -1,0 +1,64 @@
+<svg width="900" height="550" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景与标题 -->
+  <rect width="900" height="550" fill="#f8f9fa" />
+  <text x="450" y="40" font-size="20" text-anchor="middle" font-weight="bold">Rust MediaSoup 与 Worker 交互示意图</text>
+
+  <!-- Rust 控制层 -->
+  <rect x="50" y="100" width="200" height="180" rx="5" fill="#e0f7fa" stroke="#00acc1" stroke-width="2" />
+  <text x="150" y="140" font-size="16" text-anchor="middle" font-weight="bold">Rust 控制层</text>
+  <text x="150" y="180" font-size="14" text-anchor="middle">Controller（业务逻辑）</text>
+  <text x="150" y="220" font-size="14" text-anchor="middle" fill="#006064">WorkerHandle（IPC 代理）</text>
+  <text x="150" y="260" font-size="14" text-anchor="middle">Router/Consumer 句柄</text>
+
+  <!-- IPC 通道（双向箭头） -->
+  <line x1="250" y1="180" x2="350" y2="180" stroke="#7b1fa2" stroke-width="2" stroke-dasharray="8,4" />
+  <polygon points="350,175 350,185 360,180" fill="#7b1fa2" />
+  <polygon points="250,175 250,185 240,180" fill="#7b1fa2" />
+  <text x="300" y="165" font-size="13" text-anchor="middle" fill="#7b1fa2">IPC 通道（命令/响应/事件）</text>
+  <text x="300" y="195" font-size="11" text-anchor="middle" fill="#7b1fa2">Unix 套接字 / 命名管道</text>
+
+  <!-- Worker 进程 -->
+  <rect x="350" y="100" width="250" height="300" rx="5" fill="#fff3e0" stroke="#f57c00" stroke-width="2" />
+  <text x="475" y="140" font-size="16" text-anchor="middle" font-weight="bold">Worker 进程（媒体处理）</text>
+  <text x="475" y="180" font-size="14" text-anchor="middle">IPC 接收器</text>
+  <text x="475" y="220" font-size="14" text-anchor="middle" fill="#e65100">Router（路由核心）</text>
+  <text x="475" y="260" font-size="14" text-anchor="middle">Transport（传输通道）</text>
+  <text x="475" y="300" font-size="14" text-anchor="middle">Producer（流输入）</text>
+  <text x="475" y="340" font-size="14" text-anchor="middle">Consumer（流输出）</text>
+  <text x="475" y="380" font-size="14" text-anchor="middle">媒体引擎（编码/转发）</text>
+
+  <!-- 客户端 A（发送流） -->
+  <rect x="650" y="150" width="120" height="80" rx="5" fill="#e8f5e9" stroke="#43a047" stroke-width="2" />
+  <text x="710" y="180" font-size="14" text-anchor="middle" font-weight="bold">客户端 A</text>
+  <text x="710" y="205" font-size="12" text-anchor="middle">WebRTC 发送端</text>
+
+  <!-- 客户端 B（接收流） -->
+  <rect x="650" y="300" width="120" height="80" rx="5" fill="#ffebee" stroke="#e53935" stroke-width="2" />
+  <text x="710" y="330" font-size="14" text-anchor="middle" font-weight="bold">客户端 B</text>
+  <text x="710" y="355" font-size="12" text-anchor="middle">WebRTC 接收端</text>
+
+  <!-- 媒体流：客户端 A → Worker -->
+  <line x1="650" y1="190" x2="600" y2="190" stroke="#43a047" stroke-width="2" />
+  <polygon points="600,185 600,195 590,190" fill="#43a047" />
+  <text x="675" y="180" font-size="11" text-anchor="end" fill="#43a047">RTP 媒体流</text>
+
+  <!-- 媒体流：Worker → 客户端 B -->
+  <line x1="600" y1="330" x2="650" y2="330" stroke="#e53935" stroke-width="2" />
+  <polygon points="650,325 650,335 660,330" fill="#e53935" />
+  <text x="625" y="320" font-size="11" text-anchor="middle" fill="#e53935">转发的 RTP 流</text>
+
+  <!-- 命令流向：控制层 → Worker（示例：createRouter） -->
+  <line x1="250" y1="220" x2="350" y2="220" stroke="#006064" stroke-width="1.5" stroke-dasharray="3,2" />
+  <polygon points="350,215 350,225 355,220" fill="#006064" />
+  <text x="300" y="210" font-size="11" text-anchor="middle" fill="#006064">命令：createRouter</text>
+
+  <!-- 响应流向：Worker → 控制层（示例：routerId） -->
+  <line x1="350" y1="240" x2="250" y2="240" stroke="#006064" stroke-width="1.5" stroke-dasharray="3,2" />
+  <polygon points="250,235 250,245 245,240" fill="#006064" />
+  <text x="300" y="250" font-size="11" text-anchor="middle" fill="#006064">响应：{ routerId: "xxx" }</text>
+
+  <!-- 事件流向：Worker → 控制层（示例：producerConnected） -->
+  <line x1="350" y1="260" x2="250" y2="260" stroke="#d32f2f" stroke-width="1.5" stroke-dasharray="3,2" />
+  <polygon points="250,255 250,265 245,260" fill="#d32f2f" />
+  <text x="300" y="270" font-size="11" text-anchor="middle" fill="#d32f2f">事件：producerConnected</text>
+</svg>
