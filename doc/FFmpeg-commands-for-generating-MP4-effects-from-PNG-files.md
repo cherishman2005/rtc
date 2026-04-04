@@ -43,6 +43,7 @@ ffmpeg -framerate 0.1 -i filtered-%d.png \
   -vf "fade=in:0:5,fade=out:115:5" \
   -c:v libx264 -crf 18 -preset slow -pix_fmt yuv420p \
   最终视频.mp4
--crf 18：接近无损画质
--pix_fmt yuv420p：保证手机 / 播放器能播
 ```
+* -crf 18：接近无损画质
+* -pix_fmt yuv420p：保证手机 / 播放器能播
+
